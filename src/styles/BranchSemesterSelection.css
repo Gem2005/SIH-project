@@ -1,0 +1,112 @@
+/* Container Styles */
+.branch-semester-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: #e0e5ec;
+  border-radius: 20px;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  max-width: 500px;
+  margin: 40px auto;
+}
+
+/* Heading Styles */
+.branch-semester-selection h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  text-shadow: 1px 1px 2px #ffffff;
+  text-align: center;
+}
+
+/* Container for Select Elements */
+.select-container {
+  margin: 20px 0;
+  width: 100%;
+}
+
+/* Label Styles */
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Neomorphic Select Element Styles */
+.neomorphic-select {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #e0e5ec;
+  box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+  font-size: 16px;
+  color: #333;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Focus Styles for Select Element */
+.neomorphic-select:focus {
+  box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff, 0px 0px 5px 2px rgba(0, 123, 255, 0.5);
+}
+
+/* Neomorphic Button Styles */
+.neomorphic-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  background-color: #e0e5ec;
+  box-shadow: 8px 8px 16px #bebebe, -8px -8px 16px #ffffff;
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+/* Hover Styles for Button */
+.neomorphic-button:hover {
+  box-shadow: inset 8px 8px 16px #bebebe, inset -8px -8px 16px #ffffff;
+}
+
+/* Active Styles for Button */
+.neomorphic-button:active {
+  box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .branch-semester-selection {
+      padding: 30px;
+  }
+  .branch-semester-selection h2 {
+      font-size: 22px;
+  }
+  .neomorphic-select {
+      font-size: 14px;
+  }
+  .neomorphic-button {
+      font-size: 16px;
+      padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .branch-semester-selection {
+      padding: 20px;
+  }
+  .branch-semester-selection h2 {
+      font-size: 20px;
+  }
+  .neomorphic-select {
+      font-size: 14px;
+  }
+  .neomorphic-button {
+      font-size: 14px;
+      padding: 8px 14px;
+  }
+}

@@ -1,0 +1,87 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Page Container */
+  .alumni-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Alumni Content */
+  .alumni-content {
+    flex: 1; /* Ensure the content takes up remaining space above the footer */
+    padding: 50px;
+    background: #e0e5ec; /* Background for the section */
+    border-radius: 15px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2), 
+                -8px -8px 16px rgba(255, 255, 255, 0.9);
+  }
+  
+  .session-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .session-header h2 {
+    font-size: 2rem;
+    color: #2e3a59;
+  }
+  
+  .session-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Default to 3 columns */
+    gap: 20px;
+  }
+  
+  .session-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    background: #e0e5ec;
+    border-radius: 15px;
+    text-align: center;
+    color: #1e2a38;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2), 
+                -8px -8px 16px rgba(255, 255, 255, 0.9);
+  }
+  
+  .session-card:hover {
+    background: #008afc;
+    color: white;
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.2), 
+                inset -4px -4px 8px rgba(255, 255, 255, 0.9);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1200px) {
+    .session-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .session-grid {
+      grid-template-columns: 1fr; /* 1 column for mobile */
+    }
+  }
+  
+  /* Footer Styles */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #2e3a59;
+    color: white;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2), 
+                -8px -8px 16px rgba(255, 255, 255, 0.9);
+  }
+  

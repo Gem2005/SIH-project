@@ -1,0 +1,101 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Contact Section */
+  .contact-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background: #e0e5ec; /* Background for the section */
+    border-radius: 15px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2), 
+                -8px -8px 16px rgba(255, 255, 255, 0.9);
+  }
+  
+  .contact-details, .contact-form {
+    width: 45%;
+    background: #e0e5ec; /* Background for each part */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2), 
+                -8px -8px 16px rgba(255, 255, 255, 0.9);
+  }
+  
+  .contact-details:hover, .contact-form:hover {
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.2), 
+                inset -4px -4px 8px rgba(255, 255, 255, 0.9);
+  }
+  
+  .contact-details h2, .contact-form h2 {
+    font-size: 2rem;
+    color: #324158;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info p {
+    margin: 5px 0;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #e0e5ec; /* Background for inputs */
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2), 
+                -8px -8px 16px rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease;
+  }
+  
+  .form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.2), 
+                inset -4px -4px 8px rgba(255, 255, 255, 0.9);
+  }
+  
+  .submit-btn {
+    background: rgb(0, 81, 255);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2), 
+                -8px -8px 16px rgba(255, 255, 255, 0.9);
+  }
+  
+  .submit-btn:hover {
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.2), 
+                inset -4px -4px 8px rgba(255, 255, 255, 0.9);
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 1024px) {
+    .contact-section {
+      flex-direction: column;
+    }
+  
+    .contact-details, .contact-form {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  

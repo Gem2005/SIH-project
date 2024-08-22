@@ -1,0 +1,178 @@
+/* General Container for Neumorphism */
+.neumorphism {
+    background: #e0e5ec;
+    border-radius: 15px;
+    box-shadow: inset 4px 4px 8px #a1a1a1, inset -4px -4px 8px #ffffff;
+    padding: 20px;
+    margin: 1rem;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Profile Image */
+.neumorphism-img {
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: inset 4px 4px 8px #a1a1a1, inset -4px -4px 8px #ffffff;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.neumorphism-img:hover {
+    box-shadow: inset 6px 6px 12px #a1a1a1, inset -6px -6px 12px #ffffff;
+}
+
+/* Neumorphic Button */
+.neumorphism-button {
+    background: #e0e5ec;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #185282;
+    box-shadow: 6px 6px 12px #a1a1a1, -6px -6px 12px #ffffff;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.neumorphism-button:hover {
+    background: #d0d7e0;
+    box-shadow: inset 4px 4px 8px #a1a1a1, inset -4px -4px 8px #ffffff;
+}
+
+/* Profile Card and Sections */
+.profile-card, .neumorphism h2 {
+    background: #e0e5ec;
+    border-radius: 15px;
+    box-shadow: 8px 8px 16px #a1a1a1, -8px -8px 16px #ffffff;
+    padding: 15px;
+    margin: 1rem;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Social Icons */
+.social-icon {
+    border-radius: 50%;
+    box-shadow: inset 2px 2px 4px #a1a1a1, inset -2px -2px 4px #ffffff;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    box-shadow: inset 4px 4px 8px #a1a1a1, inset -4px -4px 8px #ffffff;
+}
+
+/* Grid and Layout */
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+/* Profile Header Section */
+#mainHeading {
+    background: #e0e5ec;
+    border-radius: 15px;
+    box-shadow: inset 4px 4px 8px #a1a1a1, inset -4px -4px 8px #ffffff;
+    padding: 20px;
+    margin-bottom: 1rem;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Responsive Styles */
+
+/* Mobile */
+@media (max-width: 639px) {
+    .neumorphism {
+        padding: 10px;
+    }
+
+    .neumorphism-button {
+        padding: 8px 16px;
+        font-size: 0.875rem;
+    }
+
+    .neumorphism-img {
+        height: 8rem;
+        width: 8rem;
+    }
+
+    .profile-card, .neumorphism p, .neumorphism h2 {
+        padding: 10px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Tablet */
+@media (min-width: 640px) and (max-width: 767px) {
+    .neumorphism {
+        padding: 15px;
+    }
+
+    .neumorphism-button {
+        padding: 10px 18px;
+        font-size: 0.9375rem;
+    }
+
+    .neumorphism-img {
+        height: 10rem;
+        width: 10rem;
+    }
+
+    .profile-card, .neumorphism p, .neumorphism h2 {
+        padding: 12px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Desktop */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .neumorphism {
+        padding: 20px;
+    }
+
+    .neumorphism-button {
+        padding: 12px 24px;
+        font-size: 1rem;
+    }
+
+    .neumorphism-img {
+        height: 12rem;
+        width: 12rem;
+    }
+
+    .profile-card, .neumorphism p, .neumorphism h2 {
+        padding: 15px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Large Desktop (4K) */
+@media (min-width: 1024px) {
+    .neumorphism {
+        padding: 30px;
+    }
+
+    .neumorphism-button {
+        padding: 15px 30px;
+        font-size: 1.125rem;
+    }
+
+    .neumorphism-img {
+        height: 15rem;
+        width: 15rem;
+    }
+
+    .profile-card, .neumorphism p, .neumorphism h2 {
+        padding: 20px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

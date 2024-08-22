@@ -1,0 +1,93 @@
+/* BatchPage.css */
+
+.batch-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #E0E5EC;
+}
+
+.batch-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+.batch-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.batch-header h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2E3A59;
+}
+
+.batch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.batch-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: #E0E5EC;
+  border-radius: 12px;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1), -6px -6px 12px rgba(255, 255, 255, 0.7);
+  text-align: center;
+  text-decoration: none;
+  color: #1E2A38;
+  font-weight: 600;
+  transition: box-shadow 0.3s ease;
+}
+
+.batch-card:hover {
+  box-shadow: inset 6px 6px 12px rgba(0, 0, 0, 0.1), inset -6px -6px 12px rgba(255, 255, 255, 0.7);
+}
+
+/* Responsive Design */
+
+/* For tablets */
+@media (min-width: 640px) {
+  .batch-header h2 {
+    font-size: 2.5rem;
+  }
+
+  .batch-card {
+    padding: 2rem;
+  }
+}
+
+/* For desktops */
+@media (min-width: 768px) {
+  .batch-content {
+    padding: 3rem;
+  }
+
+  .batch-header h2 {
+    font-size: 3rem;
+  }
+
+  .batch-card {
+    padding: 2.5rem;
+  }
+}
+
+/* For large screens (4K) */
+@media (min-width: 1440px) {
+  .batch-content {
+    padding: 4rem;
+  }
+
+  .batch-header h2 {
+    font-size: 3.5rem;
+  }
+
+  .batch-card {
+    padding: 3rem;
+  }
+}

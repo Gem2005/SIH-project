@@ -1,0 +1,113 @@
+/* Container Styles */
+.subject-list {
+    margin-top: 2rem;
+    padding: 2rem 1rem;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  /* Title Styles */
+  .title {
+    text-align: center;
+    color: #324158;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  /* Subject Styles */
+  .subject {
+    background:#e0e5ec;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    box-shadow: 7px 7px 14px #b0b0b0, -7px -7px 14px #ffffff;
+    transition: all 0.3s ease;
+  }
+  
+  .subject.active {
+    background: #e0e5ec;
+    box-shadow: inset 7px 7px 14px #b0b0b0, inset -7px -7px 14px #ffffff;
+  }
+  
+  .subject-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  /* Subject Code and Name */
+  .subject-code,
+  .subject-name {
+    color: #1c4483;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 1rem;
+  }
+  
+  /* Toggle Button */
+  .toggle-btn {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .arrow {
+    transition: transform 0.3s ease;
+  }
+  
+  .arrow.rotate {
+    transform: rotate(180deg);
+  }
+  
+  /* Subject Resources */
+  .subject-resources {
+    margin-left: 2rem;
+    padding-top: 1rem;
+  }
+  
+  .subject-resources ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .subject-resources li a {
+    font-size: 1rem;
+    color: #008afc;
+    text-decoration: none;
+    margin-right: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .subject-resources li a:hover {
+    color: #005f99;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .subject-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .subject-code,
+    .subject-name {
+      font-size: 1.2rem;
+      margin-left: 0;
+    }
+  
+    .title {
+      font-size: 1.5rem;
+    }
+  
+    .subject-resources {
+      margin-left: 1rem;
+    }
+  }
+  
