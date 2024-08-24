@@ -1,0 +1,85 @@
+/* Footer Container */
+.footer {
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), 
+    -4px -4px 8px rgba(255, 255, 255, 0.9);
+    background-color: #E0E5EC;
+  }
+  
+  /* Inner Container */
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Logo Placeholder */
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    box-shadow: inset 5px 5px 10px #aaaaaa, inset -5px -5px 10px #ffffff;
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
+  
+  /* Links Container */
+ 
+  /* Social Icons Container */
+  .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Social Icon Styles */
+  .icon {
+    color: #333;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), 
+              -4px -4px 8px rgba(255, 255, 255, 0.9);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .icon:hover {
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.2), 
+              inset -4px -4px 8px rgba(255, 255, 255, 0.9);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .inner {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .links {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  
+    .icon {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .link {
+      font-size: 12px;
+    }
+  
+    .icon {
+      font-size: 1rem;
+    }
+  }
+  

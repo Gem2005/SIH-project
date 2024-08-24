@@ -31,7 +31,7 @@ const StudentProfilePage: React.FC = () => {
             <div className="flex flex-col items-center md:flex-row md:items-start">
               <img
                 src={studentProfile.profileImage}
-                className="neumorphism-img h-48 md:h-60 mx-4 rounded-full"
+                className="neumorphism-img h-32  md:h-60 mx-4 rounded-full"
                 alt={studentProfile.name}
               />
               <div className="text-center md:text-left">
@@ -44,7 +44,7 @@ const StudentProfilePage: React.FC = () => {
               </div>
             </div>
             
-            <button className="neumorphism-button hover:shadow-[#008AFC]" onClick={handleMessageClick}>
+            <button className="neumorphism-button hover:shadow-[#008AFC]">
               Message
             </button>
           </div>

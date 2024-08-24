@@ -7,33 +7,19 @@ import ContactForm from '../components/ContactForm';
 import BlogSection from '../components/BlogSection';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
+import Footer from '@components/Footer';
 
 const HomePage: React.FC = () => {
   return (
     <div>
       <Navbar/>
-      <HeroSection/>
-
-    
+      <HeroSection/>    
      <FeaturesCard />
-     <BlogSection/>    
-     
-     <TeamMember />
-    
-
-            
-       
-
-     
-      
-
-      {/* Contact Us Section */}
-      <section id="contact" className="py-20">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Contact Us</h2>
-          <ContactForm />
-        </div>
-      </section>
+     <BlogSection/>         
+     <TeamMember />      
+     <ContactForm />
+     <Footer/>
+         
     </div>
   );
 };

@@ -1,0 +1,76 @@
+/* index.css or BlogPage.module.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .bg-neumorphism {
+    background-color: #e0e5ec;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2), inset -2px -2px 5px rgba(255, 255, 255, 0.5);
+  }
+  
+  .shadow-neumorphism {
+    background-color: #ffffff;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1), -6px -6px 12px rgba(255, 255, 255, 0.5);
+  }
+  
+  .shadow-neumorphism:hover {
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.2), inset -4px -4px 8px rgba(255, 255, 255, 0.5);
+  }
+  
+  .text-link {
+    color: #1C4483;
+    text-decoration: none;
+  }
+  
+  .text-link:hover {
+    text-decoration: underline;
+  }
+  
+ 
+  
+  @media (min-width: 640px) {
+    .blog-container {
+      max-width: 640px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .blog-container {
+      max-width: 768px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .blog-container {
+      max-width: 1024px;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .blog-container {
+      max-width: 1280px;
+    }
+  }
+  
+  @media (min-width: 1536px) {
+    .blog-container {
+      max-width: 1536px;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .text-lg {
+      font-size: 1.125rem;
+    }
+    
+    .text-base {
+      font-size: 1rem;
+    }
+  
+    .text-sm {
+      font-size: 0.875rem;
+    }
+  }
+  

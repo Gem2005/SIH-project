@@ -19,45 +19,46 @@ const SubjectList: React.FC = () => {
 
   return (
     <>
-   <Navbar/>
-    <section className="subject-list">
-      <div className="container">
+      <Navbar />
+      <section className="subject-list">
         <h1 className="title">
-          {branch} - {year} Semester
-        </h1>
-        <div className="subjects">
-          {semesterSubjects.map((subject, index) => (
-            <div key={subject.code} className={`subject ${activeIndex === index ? 'active' : ''}`}>
-              <div className="subject-header" onClick={() => toggleMenu(index)}>
-                <p className="subject-code">{subject.code}</p>
-                <p className="subject-name">{subject.name}</p>
-                <button aria-label="toggle" className="toggle-btn">
-                  <img
-                    className={`arrow ${activeIndex === index ? 'rotate' : ''}`}
-                    src={ToggleImg}
-                    alt="toggle"
-                  />
-                </button>
-              </div>
-              {activeIndex === index && (
-                <div className="subject-resources">
-                  <ul>
-                    {subject.resources.map((resource, i) => (
-                      <li key={i}>
-                        <a href={resource.url} target="_blank" rel="noopener noreferrer">
-                          {resource.type}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
+            {branch} - {year} Semester
+          </h1>
+        <div className="alpha-container">
+          
+          <div className="subjects">
+            {semesterSubjects.map((subject, index) => (
+              <div key={subject.code} className={`subject ${activeIndex === index ? 'active' : ''}`}>
+                <div className="subject-header" onClick={() => toggleMenu(index)}>
+                  <p className="subject-code">{subject.code}</p>
+                  <p className="subject-name">{subject.name}</p>
+                  <button aria-label="toggle" className="toggle-btn">
+                    <img
+                      className={`arrow ${activeIndex === index ? 'rotate' : ''}`}
+                      src={ToggleImg}
+                      alt="toggle"
+                    />
+                  </button>
                 </div>
-              )}
-            </div>
-          ))}
+                {activeIndex === index && (
+                  <div className="subject-resources">
+                    <ul>
+                      {subject.resources.map((resource, i) => (
+                        <li key={i}>
+                          <a href={resource.url} target="_blank" rel="noopener noreferrer">
+                            {resource.type}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
-    <Footer/>
+      </section>
+      <Footer />
     </>
   );
 };

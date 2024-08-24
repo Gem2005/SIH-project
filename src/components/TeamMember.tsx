@@ -7,8 +7,7 @@ interface TeamMemberProps {
   imgSrc: string;
   linkedin: string;
   instagram?: string;
-  twitter?: string;
-  facebook?: string;
+  
   youtube?: string;
   highlights: string;
   about: string;
@@ -20,8 +19,7 @@ const TeamMember: React.FC<TeamMemberProps> = ({
   imgSrc,
   linkedin,
   instagram,
-  twitter,
-  facebook,
+ 
   youtube,
   highlights,
   about
@@ -51,21 +49,24 @@ const TeamMember: React.FC<TeamMemberProps> = ({
           {instagram && <a href={instagram} target="_blank" rel="noopener noreferrer">
             <img src="src/assets/images/instagram.jpg" alt="Instagram" />
           </a>}
-          {twitter && <a href={twitter} target="_blank" rel="noopener noreferrer">
-            <img src="src/assets/images/twitter.jpg" alt="Twitter" />
-          </a>}
-          {facebook && <a href={facebook} target="_blank" rel="noopener noreferrer">
-            <img src="src/assets/images/facebook.jpg" alt="Facebook" />
-          </a>}
+          
           {youtube && <a href={youtube} target="_blank" rel="noopener noreferrer">
             <img src="src/assets/images/youtube.jpg" alt="YouTube" />
           </a>}
         </div>
         <div className="team-card-content">
-          <h2>Highlights</h2>
-          <p>{highlights}</p>
-          <h2>About</h2>
-          <p>{about}</p>
+          <h2><b>Highlights</b></h2>
+          <div>
+          
+          <p> <b>Machine Learning Engineer</b></p>
+          <p> <b>Full Stack Web Developer</b></p>
+          </div>          
+          <h2><b>About</b></h2>
+          <p> Pursuing  <b>B.Tech </b> in <b>Information Technology</b> from <b><i>Rajkiya Engineering College Bijnor</i></b>, I'm all about turning codes into captivating creations.
+
+            <br />  As a <b>Front-End Web Developer</b>, I live for those <b>"aha!"</b> moments when a design comes to life! Crafting sleek, stylish, and <b>user-friendly interfaces</b> .
+           But <b><i>that’s not all!</i></b> I'm currently diving into the magical realm of <b>Machine Learning </b>.
+          </p>
         </div>
       </div>
     </div>
@@ -75,7 +76,7 @@ const TeamMember: React.FC<TeamMemberProps> = ({
 const TeamMembers: React.FC = () => {
   return (
     <section className="team-section">
-      <h1 className="team-section-title">Our Team</h1>
+      <h1 className="team-section-title">Developed By</h1>
       <div className="team-grid">
         <TeamMember
           name="Arpan Saini"
@@ -83,8 +84,6 @@ const TeamMembers: React.FC = () => {
           imgSrc="src/assets/images/arpan7.jpg"
           linkedin="https://www.linkedin.com/in/arpansaini/"
           instagram="https://www.instagram.com/arpan_kumar_saini/"
-          twitter="https://twitter.com/arpan_saini"
-          facebook="https://www.facebook.com/arpan.saini.547"
           youtube="https://www.youtube.com/c/ArpanSaini"
           highlights="Alpha: 7347892, Beta: gbyewwerhui, Delta: TFGJHBGGiu, Theta: ftrft7bungjin"
           about="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, laudantium ea placeat sapiente maxime, voluptatem maiores nisi ipsa libero totam nostrum ut natus quibusdam odio reiciendis possimus, repellat atque perspiciatis."

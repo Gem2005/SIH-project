@@ -1,20 +1,25 @@
 /* BatchPage.css */
 
+/* General styles for the page */
 .batch-page {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   background-color: #E0E5EC;
+  padding-top: 20px; /* Adjust top padding to provide margin */
 }
 
+/* Content section styling */
 .batch-content {
   flex: 1;
-  padding: 2rem;
+  padding: 1.5rem; /* Default padding for smaller screens */
 }
 
+/* Header styling */
 .batch-header {
   text-align: center;
   margin-bottom: 2rem;
+  margin-top: 1rem; /* Margin from top for the header */
 }
 
 .batch-header h2 {
@@ -30,6 +35,7 @@
   padding: 1rem;
 }
 
+/* Styling for individual batch cards */
 .batch-card {
   display: flex;
   justify-content: center;
@@ -43,6 +49,8 @@
   color: #1E2A38;
   font-weight: 600;
   transition: box-shadow 0.3s ease;
+  max-width: 300px; /* Set a max-width for larger screens */
+  width: 100%; /* Ensure full width on smaller screens */
 }
 
 .batch-card:hover {
@@ -65,7 +73,7 @@
 /* For desktops */
 @media (min-width: 768px) {
   .batch-content {
-    padding: 3rem;
+    padding: 2.5rem;
   }
 
   .batch-header h2 {
@@ -80,7 +88,7 @@
 /* For large screens (4K) */
 @media (min-width: 1440px) {
   .batch-content {
-    padding: 4rem;
+    padding: 3rem;
   }
 
   .batch-header h2 {
@@ -89,5 +97,6 @@
 
   .batch-card {
     padding: 3rem;
+    max-width: 400px; /* Allow wider cards on large screens */
   }
 }

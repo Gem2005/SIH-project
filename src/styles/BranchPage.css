@@ -1,20 +1,25 @@
 /* BranchPage.css */
 
+/* General styles for the page */
 .branch-page {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   background-color: #E0E5EC;
+  padding-top: 20px; /* Adjust top padding to provide margin */
 }
 
+/* Content section styling */
 .branch-content {
   flex: 1;
-  padding: 2rem;
+  padding: 1.5rem; /* General padding for smaller screens */
 }
 
+/* Header styling */
 .branch-header {
   text-align: center;
   margin-bottom: 2rem;
+  margin-top: 1rem; /* Margin from top for the header */
 }
 
 .branch-header h2 {
@@ -28,14 +33,16 @@
   color: #576D94;
 }
 
+/* Grid layout for branch cards */
 .branch-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; /* Center items horizontally */
-  gap: 1.5rem;
+  gap: 1.5rem; /* Space between grid items */
   padding: 1rem;
 }
 
+/* Styling for individual branch cards */
 .branch-card {
   display: flex;
   justify-content: center;
@@ -49,6 +56,8 @@
   color: #1E2A38;
   font-weight: 600;
   transition: box-shadow 0.3s ease;
+  width: 100%; /* Ensure full width on smaller screens */
+  max-width: 300px; /* Limit max width for larger screens */
 }
 
 .branch-card:hover {
@@ -59,6 +68,10 @@
 
 /* For tablets */
 @media (min-width: 640px) {
+  .branch-content {
+    padding: 2rem;
+  }
+
   .branch-header h2 {
     font-size: 2.5rem;
   }
@@ -89,6 +102,10 @@
   .branch-card {
     padding: 2.5rem;
   }
+
+  .branch-grid {
+    gap: 2rem; /* Increase gap for better spacing */
+  }
 }
 
 /* For large screens (4K) */
@@ -107,5 +124,10 @@
 
   .branch-card {
     padding: 3rem;
+    max-width: 400px; /* Allow wider cards on large screens */
+  }
+
+  .branch-grid {
+    gap: 3rem; /* More spacing for large screens */
   }
 }

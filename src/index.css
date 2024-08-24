@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* Neumorphism Effect */
 .neumorphism-nav {
   background: #E0E5EC;

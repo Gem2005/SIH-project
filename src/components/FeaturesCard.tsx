@@ -24,10 +24,10 @@ const FeatureCard: React.FC = () => {
         {[
           { to: "/batch", imgSrc: alumini1, title: "Alumni" }, // Update href to route
           { to: "/study-material", imgSrc: note2, title: "Study Material" },
-          { to: "/", imgSrc: interaction1, title: "Interact" },
-          { href: "", imgSrc: student2, title: "Students" },
+          // { to: "/", imgSrc: interaction1, title: "Interact" },
+          // { href: "", imgSrc: student2, title: "Students" },
           { href: "http://recb.ac.in/", imgSrc: college3, title: "College" },
-          { href: "", imgSrc: alpha, title: "Alpha" },
+          // { href: "", imgSrc: alpha, title: "Alpha" },
         ].map((card, index) => (
           <div
             key={index}

@@ -8,8 +8,12 @@ import StudentsPage from './pages/StudentsPage';
 import StudentProfilePage from './pages/StudentProfilePage';
 import BranchSemesterSelection from './components/BranchSemesterSelection';
 import SubjectList from './components/SubjectList';
-import ChatPage from './pages/chatpage/ChatPage';
 import NotFoundPage from './pages/NotFoundPage';
+import BlogPage from './pages/BlogPage';
+import FAQ from './pages/FAQ';
+import LoginPage from './pages/LoginPage';
+import RegisterPage from './pages/RegisterPage';
+import ForgetPassword from './pages/ForgetPassword';
 
 const App: React.FC = () => {
   return (
@@ -17,19 +21,28 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
 
+
+
+        <Route path="/loginpage" element={<LoginPage />} />
+        <Route path="/register" element={<RegisterPage />} />
+        <Route path="/forgot-password" element={<ForgetPassword />} />
+        <Route path="/faq" element={<FAQ />} />
         {/* for alumini list features */}
         
+       
         <Route path="/batch" element={<BatchPage />} />
         <Route path="/branch/:batchYear" element={<BranchPage />} />
         <Route path="/students/:batchYear/:branchName" element={<StudentsPage />} />
         <Route path="/student/:studentId" element={<StudentProfilePage />} />
 
-        {/* for chat feature  */}
-        <Route path="/chat/:studentId" element={<ChatPage />} />
+      
 
         {/* for notes feature */}
         <Route path="/study-material" element={<BranchSemesterSelection />} />
         <Route path="/study-material/:branch/:year" element={<SubjectList />} />
+
+        {/* for  blog feature */}
+        <Route path="/blog/:id" element={<BlogPage />} />
 
 
         {/* for error page  */}

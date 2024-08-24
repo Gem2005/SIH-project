@@ -1,5 +1,8 @@
-import studentImg1 from '../assets/images/Arpan3.jpg';
-import studentImg2 from '../assets/images/arpan7.jpg';
+import studentImg5 from '../assets/images/Arpan5.jpg';
+import studentImg4 from '../assets/images/Arpan4.jpg';
+import studentImg2 from '../assets/images/Arpan3.jpg';
+import studentImg3 from '../assets/images/Arpan2.jpg';
+import studentImg1 from '../assets/images/arpan7.jpg';
 
 export interface StudentProfile {
   id: number;
@@ -29,7 +32,7 @@ export const studentProfiles: StudentProfile[] = [
     id: 1,
     name: 'John Doe',
     jobTitle: 'Web Developer',
-    profileImage: studentImg1,
+    profileImage: studentImg3,
     about: 'Passionate web developer with a love for creating intuitive and user-friendly interfaces.',
     email: 'john.doe@example.com',
     phone: '+91 123 456 7890',
@@ -95,7 +98,7 @@ export const studentProfiles: StudentProfile[] = [
     id: 4,
     name: 'Bob Lee',
     jobTitle: 'Software Engineer',
-    profileImage: studentImg2,
+    profileImage: studentImg4,
     about: 'Software engineer with expertise in building scalable web applications.',
     email: 'bob.lee@example.com',
     phone: '+91 456 789 0123',
@@ -117,7 +120,7 @@ export const studentProfiles: StudentProfile[] = [
     id: 5,
     name: 'Emily Davis',
     jobTitle: 'Machine Learning Engineer',
-    profileImage: studentImg1,
+    profileImage: studentImg5,
     about: 'Machine learning engineer specializing in artificial intelligence and predictive modeling.',
     email: 'emily.davis@example.com',
     phone: '+91 567 890 1234',
@@ -183,7 +186,7 @@ export const studentProfiles: StudentProfile[] = [
     id: 8,
     name: 'David Martinez',
     jobTitle: 'Database Administrator',
-    profileImage: studentImg2,
+    profileImage: studentImg3,
     about: 'Experienced DBA specializing in database management and optimization.',
     email: 'david.martinez@example.com',
     phone: '+91 890 123 4567',
@@ -205,7 +208,7 @@ export const studentProfiles: StudentProfile[] = [
     id: 9,
     name: 'Laura Scott',
     jobTitle: 'Product Manager',
-    profileImage: studentImg1,
+    profileImage: studentImg4,
     about: 'Product manager with a background in leading cross-functional teams to launch successful products.',
     email: 'laura.scott@example.com',
     phone: '+91 901 234 5678',
@@ -227,7 +230,7 @@ export const studentProfiles: StudentProfile[] = [
     id: 10,
     name: 'Chris Johnson',
     jobTitle: 'Systems Analyst',
-    profileImage: studentImg2,
+    profileImage: studentImg5,
     about: 'Systems analyst with experience in analyzing and improving IT systems.',
     email: 'chris.johnson@example.com',
     phone: '+91 012 345 6789',
@@ -249,7 +252,7 @@ export const studentProfiles: StudentProfile[] = [
     id: 11,
     name: 'Megan Green',
     jobTitle: 'Graphic Designer',
-    profileImage: studentImg1,
+    profileImage: studentImg3,
     about: 'Graphic designer with a flair for creating visually appealing designs.',
     email: 'megan.green@example.com',
     phone: '+91 123 456 7890',

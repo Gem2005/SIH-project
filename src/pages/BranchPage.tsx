@@ -14,8 +14,11 @@ const BranchPage: React.FC = () => {
   ];
 
   return (
-    <div className="branch-page">
-      <Navbar /> 
+    <>
+    <Navbar /> 
+   
+    <div className="branch-page ">
+      
       
       <section className="branch-content">
         <div className="branch-header">
@@ -37,6 +40,7 @@ const BranchPage: React.FC = () => {
 
       <Footer /> 
     </div>
+    </>
   );
 };
 

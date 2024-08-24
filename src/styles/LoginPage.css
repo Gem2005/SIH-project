@@ -1,0 +1,107 @@
+/* Global styles for the login page */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #E0E5EC;
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+  }
+  
+  .login-form {
+    background: #E0E5EC;
+    border-radius: 20px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), 
+    -4px -4px 8px rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .login-form:hover {
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.2), 
+              inset -4px -4px 8px rgba(255, 255, 255, 0.9);
+  }
+  
+  h1 {
+    margin: 0 0 1rem;
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), 
+              -4px -4px 8px rgba(255, 255, 255, 0.9);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .form-group input:focus {
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.2), 
+              inset -4px -4px 8px rgba(255, 255, 255, 0.9);
+    outline: none;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), 
+    -4px -4px 8px rgba(255, 255, 255, 0.9);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  
+  
+  .links {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .links .link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin: 0 0.5rem;
+  }
+  
+  .links .link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .login-form {
+      padding: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .login-form {
+      width: 100%;
+      border-radius: 0;
+    }
+  }
+  
