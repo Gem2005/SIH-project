@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "../styles/TeamMember.css"; // Make sure the CSS file is correctly linked
+import "../styles/TeamMember.css";
+import  ArpanImg  from "../assets/images/arpan7.jpg"; // Make sure the CSS file is correctly linked
 
 interface TeamMemberProps {
   name: string;
@@ -81,7 +82,7 @@ const TeamMembers: React.FC = () => {
         <TeamMember
           name="Arpan Saini"
           role="Web Designer and Developer"
-          imgSrc="src/assets/images/arpan7.jpg"
+          imgSrc={ArpanImg}
           linkedin="https://www.linkedin.com/in/arpansaini/"
           instagram="https://www.instagram.com/arpan_kumar_saini/"
           youtube="https://www.youtube.com/c/ArpanSaini"
