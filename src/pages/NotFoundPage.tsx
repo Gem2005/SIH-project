@@ -27,4 +27,4 @@ import '../styles/NotFoundPage.css'; // Ensure this CSS file is in the same dire
     </div>
   );
 }
-export default NotFoundPage();
+export default NotFoundPage;
