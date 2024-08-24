@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import "../styles/TeamMember.css";
 import  ArpanImg  from "../assets/images/arpan7.jpg"; // Make sure the CSS file is correctly linked
+import  LinkedinImg  from "../assets/images/linkdin.jpg"; // Make sure the CSS file is correctly linked
+import  InstaImg  from "../assets/images/instagram.jpg"; // Make sure the CSS file is correctly linked
+import  YoutubeImg  from "../assets/images/youtube.jpg"; // Make sure the CSS file is correctly linked
 
 interface TeamMemberProps {
   name: string;
@@ -45,14 +48,14 @@ const TeamMember: React.FC<TeamMemberProps> = ({
       <div className={`team-card-details ${showFull ? "show" : "hide"}`}>
         <div className="team-card-social">
           {linkedin && <a href={linkedin} target="_blank" rel="noopener noreferrer">
-            <img src="src/assets/images/linkdin.jpg" alt="LinkedIn" />
+            <img src={LinkedinImg} alt="LinkedIn" />
           </a>}
           {instagram && <a href={instagram} target="_blank" rel="noopener noreferrer">
-            <img src="src/assets/images/instagram.jpg" alt="Instagram" />
+            <img src={InstaImg} alt="Instagram" />
           </a>}
           
           {youtube && <a href={youtube} target="_blank" rel="noopener noreferrer">
-            <img src="src/assets/images/youtube.jpg" alt="YouTube" />
+            <img src={YoutubeImg} alt="YouTube" />
           </a>}
         </div>
         <div className="team-card-content">
