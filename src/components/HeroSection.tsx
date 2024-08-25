@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/HeroSection.css';
 import image from '../assets/images/image1.jpeg';
+
 import { Link } from 'react-router-dom';
 
 const HeroSection: React.FC = () => {
@@ -8,7 +9,9 @@ const HeroSection: React.FC = () => {
     <div className="hero-container">
       <div className="hero-inner">
         <div className="hero-content">
+        
           <h1 className="hero-title">
+            
             <span className="highlight">Alum</span> <span className='text-[#1C4483]'>Mate:</span> <br /> Bridge the Gap Between Alumni and Students
           </h1>
           <p className="hero-text-muted">
