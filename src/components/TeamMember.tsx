@@ -66,7 +66,7 @@ const TeamMember: React.FC<TeamMemberProps> = ({
           <p> <b>Full Stack Web Developer</b></p>
           </div>          
           <h2><b>About</b></h2>
-          <p> Pursuing  <b>B.Tech </b> in <b>Information Technology</b> from <b><i>Rajkiya Engineering College Bijnor</i></b>, I'm all about turning codes into captivating creations.
+          <p> Pursuing  <b>B.Tech </b> in <b>Information Technology</b> from <b><i>Rajkiya Engineering College Bijnor.</i></b>
 
             <br />  As a <b>Front-End Web Developer</b>, I live for those <b>"aha!"</b> moments when a design comes to life! Crafting sleek, stylish, and <b>user-friendly interfaces</b> .
            But <b><i>that’s not all!</i></b> I'm currently diving into the magical realm of <b>Machine Learning </b>.

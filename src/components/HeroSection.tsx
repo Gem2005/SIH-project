@@ -25,6 +25,7 @@ const HeroSection: React.FC = () => {
         </div>
         <img src={image} alt="React components library" className="hero-image" />
       </div>
+      
     </div>
   );
 };
