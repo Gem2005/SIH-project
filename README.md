@@ -136,4 +136,8 @@ arpansaini55@gmail.com
 
 Project Link: [https://github.com/arpan-kumar-saini/AlumMate](https://github.com/arpan-kumar-saini/AlumMate)
 
+<<<<<<< HEAD
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+=======
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+>>>>>>> 6c18e96408a328eb3ca1770584443b057ea9176b
