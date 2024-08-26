@@ -11,7 +11,7 @@
     A platform connecting college students with alumni for mentorship, networking, and career development.
     <br />
     <br />
-    <a href="https://your-deployment-url.com">View Demo</a> ·
+    <a href="https://alummate.netlify.app/">View Demo</a> ·
     <a href="#">Report Bug</a> ·
     <a href="#">Request Feature</a>
   </p>
@@ -35,7 +35,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 <div align="center">
-  <img src='https://your-image-url.com/screenshot.png' alt="AlumMate Screenshot" width="80%" />
+  <img src='https://github.com/arpan-kumar-saini/AlumMate/blob/main/src/assets/images/AlumMate.gif' alt="AlumMate Screenshot" width="80%" />
 </div>
 
 **AlumMate** is an innovative platform designed to facilitate meaningful connections between college students and alumni. It provides tools for networking, mentorship, and career advice, helping students navigate their academic and professional journeys with the support of experienced professionals.
