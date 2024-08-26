@@ -30,24 +30,24 @@ export interface StudentProfile {
 export const studentProfiles: StudentProfile[] = [
   {
     id: 1,
-    name: 'John Doe',
-    jobTitle: 'Web Developer',
+    name: 'Arpan Saini',
+    jobTitle: 'Web Developer and ML Engineer',
     profileImage: studentImg3,
-    about: 'Passionate web developer with a love for creating intuitive and user-friendly interfaces.',
-    email: 'john.doe@example.com',
-    phone: '+91 123 456 7890',
-    company: 'Tech Innovations',
-    experience: '3 Years',
-    location: 'New Delhi',
-    achievements: 'Hackathon Winner, Published Research Paper on Web Technologies',
+    about: 'Pursuing B.Tech in Information Technology from Rajkiya Engineering College Bijnor.As a Front-End Web Developer, I live for those "aha!" moments when a design comes to life! Crafting sleek, stylish, and user-friendly interfaces . But that’s not all! I am currently diving into the magical realm of Machine Learning .',
+    email: 'work.arpansaini@gmail.com',
+    phone: '+91 9528829470',
+    company: 'NovaNectar Services Pvt. Ltd.',
+    experience: '1 Years',
+    location: 'Moradabad',
+    achievements: 'Three times Student of the year during school,Secured 1st rank in DIH compition ,Secured 1st position in portrait Artwork compition',
     certifications: 'Certified Full Stack Developer, Advanced JavaScript Programming',
     projects: 'E-commerce Platform, Real-time Chat Application',
     skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js'],
     socialLinks: {
-      linkedin: 'https://www.linkedin.com/in/johndoe/',
-      instagram: 'https://www.instagram.com/johndoe/',
-      github: 'https://github.com/johndoe',
-      twitter: 'https://twitter.com/johndoe'
+      linkedin: 'https://www.linkedin.com/in/arpan saini/',
+      instagram: 'https://www.instagram.com/arpan_kumar_saini/',
+      github: 'https://github.com/arpan-kumar-saini',
+      
     }
   },
   {

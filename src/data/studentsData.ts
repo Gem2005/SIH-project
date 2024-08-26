@@ -14,7 +14,7 @@ export interface StudentSummary {
 }
 
 export const students: StudentSummary[] = [
-  { id: 1, name: 'John Doe', rank: 'Top 5%', achievements: 'Hackathon Winner, Published Paper', imgSrc: studentImg3 },
+  { id: 1, name: 'Arpan Saini', rank: 'Top 1%', achievements: 'Hackathon Winner, Published Paper', imgSrc: studentImg3 },
   { id: 2, name: 'Jane Smith', rank: 'Top 10%', achievements: 'IEEE President, Robotics Club Lead', imgSrc: studentImg2 },
   { id: 3, name: 'Alice Johnson', rank: 'Top 3%', achievements: 'Coding Club Head, ML Researcher', imgSrc: studentImg1 },
   { id: 4, name: 'Bob Lee', rank: 'Top 7%', achievements: 'SAE Lead, Robotics Team Member', imgSrc: studentImg4 },
