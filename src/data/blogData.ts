@@ -66,7 +66,7 @@ Universities need engaged alumni to help contribute to the institution’s reput
 
         Cloud computing has also paved the way for innovations in areas like artificial intelligence, big data analytics, and the Internet of Things (IoT). It continues to drive advancements across various industries by providing scalable and efficient solutions for computing needs.
       `,
-      author: "Aayush Yadav",
+      author: "Ayush Yadav",
       tags: ["Technology", "Cloud Computing", "IT"],
       comments: [
         { user: "Gemini", comment: "Great overview of cloud computing benefits.", date: "30TH Aug, 2024" },

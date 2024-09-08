@@ -62,7 +62,7 @@ const TeamMember: React.FC<TeamMemberProps> = ({
           <h2><b>Team Members</b></h2>
           <div>
           
-          <p> <b>Aayush Yadav - 23BLC1193</b></p>
+          <p> <b>Ayush Yadav - 23BLC1193</b></p>
           <p> <b>Gemini Sharma-23BLC1010</b></p>
           <p> <b>Md. Tahir Shaikh-23BAI1277</b></p>
           <p> <b>Aarav Sharma-23BLC1300</b></p>
