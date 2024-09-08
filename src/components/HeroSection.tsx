@@ -12,7 +12,7 @@ const HeroSection: React.FC = () => {
         
           <h1 className="hero-title">
             
-            <span className="highlight">Alum</span> <span className='text-[#1C4483]'>Mate:</span> <br /> Bridge the Gap Between Alumni and Students
+            <span className="highlight">Edu</span> <span className='text-[#1C4483]'>Bridge:</span> <br /> Bridge the Gap Between Alumni and Students
           </h1>
           <p className="hero-text-muted">
             Connect, Learn, and Grow with Guidance from Your College Alumni. Forge Stronger Bonds and Unlock Opportunities for a Brighter Future.
