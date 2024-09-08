@@ -13,20 +13,20 @@ const FAQ: React.FC = () => {
 
   const faqs: FAQItem[] = [
     {
-      question: "What is AlumMate?",
-      answer: "AlumMate is an online platform that connects college students with alumni from their institution. It allows students to seek guidance, mentorship, and career advice, while alumni can give back to their community by sharing their experiences and insights.",
+      question: "What is EduBridge?",
+      answer: "EduBridge is an online platform that connects college students with alumni from their institution. It allows students to seek guidance, mentorship, and career advice, while alumni can give back to their community by sharing their experiences and insights.",
     },
     {
-      question: "How do I sign up for AlumMate?",
-      answer: 'You can sign up for AlumMate by visiting our website and clicking the "Sign Up" button. You will need to provide your email address, create a password, and fill in your profile details, such as your name, college, and graduation year.',
+      question: "How do I sign up for EduBridge?",
+      answer: 'You can sign up for EduBridge by visiting our website and clicking the "Sign Up" button. You will need to provide your email address, create a password, and fill in your profile details, such as your name, college, and graduation year.',
     },
     {
-      question: "Who can join AlumMate?",
-      answer: "AlumMate is open to both current students and alumni of participating colleges. Students can join to connect with alumni for mentorship and career advice, while alumni can join to share their experiences and guide current students.",
+      question: "Who can join EduBridge?",
+      answer: "EduBridge is open to both current students and alumni of participating colleges. Students can join to connect with alumni for mentorship and career advice, while alumni can join to share their experiences and guide current students.",
     },
     {
-      question: "Is there a fee to use AlumMate?",
-      answer: "No, AlumMate is completely free to use for both students and alumni. We are committed to fostering connections and providing valuable resources to our community at no cost.",
+      question: "Is there a fee to use EduBridge?",
+      answer: "No, EduBridge is completely free to use for both students and alumni. We are committed to fostering connections and providing valuable resources to our community at no cost.",
     },
     {
       question: "What can I ask an alum during a conversation?",

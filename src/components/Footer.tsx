@@ -14,8 +14,8 @@ const Footer = () => {
         <div className="flex items-center space-x-2">
           <Link to="/" className="flex items-center">
             
-            <span className="text-[#008AFC] font-bold text-lg md:text-xl lg:text-2xl">Alum</span>
-            <span className="text-[#1C4483] font-bold text-lg md:text-xl lg:text-2xl">Mate</span>
+            <span className="text-[#008AFC] font-bold text-lg md:text-xl lg:text-2xl">Edu</span>
+            <span className="text-[#1C4483] font-bold text-lg md:text-xl lg:text-2xl">Bridge</span>
           </Link>
         </div>
 
