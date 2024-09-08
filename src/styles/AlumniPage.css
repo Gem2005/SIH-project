@@ -1,8 +1,9 @@
-/* General styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #1c1c1e; /* Dark background for contrast */
+  color: #f4f4f4; /* Light text for readability */
 }
 
 /* Page Container */
@@ -16,50 +17,48 @@ body {
 .alumni-content {
   flex: 1; /* Ensure the content takes up remaining space above the footer */
   padding: 50px;
-  background: #f0f4f8; /* Lighter grey background */
-  border-radius: 15px;
-  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1), 
-              -8px -8px 16px rgba(255, 255, 255, 0.8);
+  background: #2c2c2e; /* Slightly lighter dark grey */
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Softer shadow for depth */
+  color: #ffffff; /* White text inside the content area */
 }
 
 .session-header {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .session-header h2 {
-  font-size: 2rem;
-  color: #334e68; /* Darker blue-grey */
+  font-size: 2.5rem;
+  color: #ffcc00; /* Bright yellow for a modern pop */
 }
 
 .session-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Default to 3 columns */
-  gap: 20px;
+  gap: 25px;
 }
 
 .session-card {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 60px;
-  background: #f0f4f8;
-  border-radius: 15px;
+  height: 80px;
+  background: #3a3a3c; /* Dark grey background for cards */
+  border-radius: 12px;
   text-align: center;
-  color: #3d5a80; /* Medium blue-grey */
+  color: #ffcc00; /* Bright yellow text for contrast */
   text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.3rem;
+  font-weight: 600;
   transition: all 0.3s ease;
-  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1), 
-              -8px -8px 16px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Softer box-shadow */
 }
 
 .session-card:hover {
-  background: #457b9d; /* Blue */
-  color: white;
-  box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.15), 
-              inset -4px -4px 8px rgba(255, 255, 255, 0.7);
+  background: linear-gradient(135deg, #ff9f1c, #ffcc00); /* Gradient for hover effect */
+  color: #1c1c1e; /* Darker text on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
 }
 
 /* Responsive Design */
@@ -77,10 +76,9 @@ body {
 
 /* Footer Styles */
 .footer {
-  padding: 20px;
+  padding: 25px;
   text-align: center;
-  background: #1d3557; /* Dark blue */
-  color: white;
-  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.15), 
-              -8px -8px 16px rgba(255, 255, 255, 0.8);
+  background: linear-gradient(135deg, #ff9f1c, #ffcc00); /* Gradient background for footer */
+  color: #1c1c1e; /* Darker footer text */
+  box-shadow: 0 -8px 20px rgba(0, 0, 0, 0.2); /* Footer shadow effect */
 }

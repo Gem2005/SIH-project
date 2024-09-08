@@ -1,69 +1,85 @@
-/* FAQ.css */
+
+/* Container Styles */
 .faq-container {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 20px;
-  background: #E0E5EC;
-  border-radius: 20px;
-  box-shadow: 8px 8px 16px #bebebe, -8px -8px 16px #ffffff;
+  padding: 30px;
+  background: #1C1F26; /* Dark background for a modern look */
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Softer shadow */
+  color: #F4F4F9; /* Light text for better contrast */
 }
 
+/* Title Styles */
 .faq-title {
   text-align: center;
-  font-size: 2em;
-  margin-bottom: 20px;
-  color: #333;
+  font-size: 2.5em;
+  margin-bottom: 25px;
+  color: #FFD700; /* Bright color for the title */
+  text-transform: uppercase; /* Capitalize for modern style */
+  letter-spacing: 1.5px; /* Spacing for a clean look */
 }
 
+/* FAQ List Styles */
 .faq-list {
   display: flex;
   flex-direction: column;
 }
 
+/* FAQ Item Styles */
 .faq-item {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   padding: 20px;
-  background: #E0E5EC;
-  border-radius: 12px;
-  box-shadow: 8px 8px 16px #bebebe, -8px -8px 16px #ffffff;
+  background: #292E49; /* Dark card background */
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* Slight shadow for depth */
   cursor: pointer;
-  transition: box-shadow 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .faq-item:hover {
-  box-shadow: inset 4px 4px 8px #bebebe, inset -4px -4px 8px #ffffff;
+  transform: scale(1.02); /* Slight scaling effect on hover */
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4); /* More shadow on hover */
 }
 
+/* FAQ Question Styles */
 .faq-question {
-  font-size: 1.2em;
+  font-size: 1.3em;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #FFD700; /* Accent color for questions */
 }
 
+/* Toggle Button Styles */
 .toggle-button {
   background: none;
   border: none;
   font-size: 1.5em;
-  color: #666;
+  color: #FFD700;
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-.faq-answer {
-  margin-top: 10px;
-  font-size: 1em;
-  color: #555;
-  line-height: 1.6;
+.toggle-button:focus {
+  outline: none;
 }
+
+.toggle-button.open {
+  transform: rotate(180deg); /* Rotate arrow when open */
+}
+
 
 /* Responsive Styles */
+
+/* For tablets and smaller screens */
 @media (max-width: 768px) {
   .faq-container {
-    padding: 15px;
+    padding: 20px;
   }
 
   .faq-title {
-    font-size: 1.8em;
+    font-size: 2.2em;
   }
 
   .faq-item {
@@ -71,7 +87,7 @@
   }
 
   .faq-question {
-    font-size: 1em;
+    font-size: 1.1em;
   }
 
   .faq-answer {
@@ -79,16 +95,17 @@
   }
 }
 
+/* For mobile screens */
 @media (max-width: 480px) {
   .faq-title {
-    font-size: 1.5em;
+    font-size: 2em;
   }
 
   .faq-question {
-    font-size: 0.9em;
+    font-size: 1em;
   }
 
   .faq-answer {
-    font-size: 0.8em;
+    font-size: 0.85em;
   }
 }

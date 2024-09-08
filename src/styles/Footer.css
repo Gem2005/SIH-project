@@ -1,85 +1,97 @@
-/* Footer Container */
+/* Footer Section */
 .footer {
-    margin-top: 40px;
-    padding: 20px;
-    border-top: 1px solid #ccc;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), 
-    -4px -4px 8px rgba(255, 255, 255, 0.9);
-    background-color: #E0E5EC;
-  }
-  
-  /* Inner Container */
+  margin-top: 40px;
+  padding: 30px;
+  border-top: 1px solid #444; /* Dark border for separation */
+  background-color: #1C1F26; /* Dark background for the footer */
+  color: #F4F4F9; /* Light text for contrast */
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+/* Inner Container */
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Logo Placeholder */
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #FFD700; /* Bright accent color for the logo */
+  padding: 12px 24px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #292E49, #536976); /* Gradient background */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Modern shadow effect */
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05); /* Slight hover scaling effect */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Social Icons Container */
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+/* Social Icon Styles */
+.icon {
+  color: #F4F4F9;
+  font-size: 1.6rem;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: #292E49; /* Dark background for icons */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icon:hover {
+  transform: translateY(-5px); /* Lift on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  background-color: #FFD700; /* Change background color on hover */
+  color: #1C1F26; /* Invert text color on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
   .inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  /* Logo Placeholder */
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
-    box-shadow: inset 5px 5px 10px #aaaaaa, inset -5px -5px 10px #ffffff;
-    padding: 10px 20px;
-    border-radius: 8px;
-  }
-  
-  /* Links Container */
- 
-  /* Social Icons Container */
-  .social-icons {
-    display: flex;
-    gap: 10px;
-  }
-  
-  /* Social Icon Styles */
-  .icon {
-    color: #333;
-    font-size: 1.5rem;
-    padding: 10px;
-    border-radius: 50%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), 
-              -4px -4px 8px rgba(255, 255, 255, 0.9);
-    transition: box-shadow 0.3s ease;
-  }
-  
-  .icon:hover {
-    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.2), 
-              inset -4px -4px 8px rgba(255, 255, 255, 0.9);
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .inner {
       flex-direction: column;
       align-items: center;
-    }
-  
-    .links {
+      text-align: center;
+  }
+
+  .social-icons {
       margin-top: 15px;
-      margin-bottom: 15px;
-    }
-  
-    .icon {
-      font-size: 1.2rem;
-    }
   }
-  
-  @media (max-width: 480px) {
-    .link {
+
+  .logo {
+      font-size: 1.5rem;
+  }
+
+  .icon {
+      font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .link {
       font-size: 12px;
-    }
-  
-    .icon {
-      font-size: 1rem;
-    }
   }
-  
+
+  .icon {
+      font-size: 1rem;
+      padding: 8px;
+  }
+}

@@ -1,101 +1,144 @@
-/* General styles */
+
 body {
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Contact Section */
+  font-family: 'Poppins', sans-serif; /* Modern font */
+  background-color: #1C1F26; /* Dark background for entire page */
+  color: #F4F4F9; /* Light text for contrast */
+  margin: 0;
+  padding: 0;
+}
+
+/* Contact Section */
+.contact-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #292E49; /* Dark background for the section */
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+  margin: 50px auto;
+  max-width: 1200px; /* Centered section */
+}
+
+/* Contact Details and Form Sections */
+.contact-details, .contact-form {
+  width: 45%;
+  background-color: #1C1F26; /* Darker background for cards */
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+  transition: all 0.3s ease;
+}
+
+.contact-details:hover, .contact-form:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5); /* Deeper shadow on hover */
+}
+
+.contact-details h2, .contact-form h2 {
+  font-size: 2.5rem;
+  color: #FFD700; /* Bright yellow for titles */
+  margin-bottom: 20px;
+  text-transform: uppercase; /* Uppercase for a modern look */
+}
+
+/* Contact Info Styling */
+.contact-info p {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+/* Contact Form */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #A9B3C1; /* Lighter text for labels */
+}
+
+.form-group input, .form-group textarea {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #292E49; /* Dark background for inputs */
+  color: #FFF; /* White text for inputs */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Soft shadow */
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+  outline: none;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.5); /* Blue shadow for focus */
+}
+
+/* Submit Button */
+.submit-btn {
+  background-color: #FFD700; /* Bright yellow for submit button */
+  color: #1C1F26; /* Dark text for contrast */
+  border: none;
+  border-radius: 15px;
+  padding: 15px 30px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.submit-btn:hover {
+  transform: translateY(-3px); /* Slight lift on hover */
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5); /* Deeper shadow on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
   .contact-section {
-    display: flex;
-    justify-content: space-between;
-    padding: 50px;
-    background: #e0e5ec; /* Background for the section */
-    border-radius: 15px;
-    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2), 
-                -8px -8px 16px rgba(255, 255, 255, 0.9);
-  }
-  
-  .contact-details, .contact-form {
-    width: 45%;
-    background: #e0e5ec; /* Background for each part */
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2), 
-                -8px -8px 16px rgba(255, 255, 255, 0.9);
-  }
-  
-  .contact-details:hover, .contact-form:hover {
-    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.2), 
-                inset -4px -4px 8px rgba(255, 255, 255, 0.9);
-  }
-  
-  .contact-details h2, .contact-form h2 {
-    font-size: 2rem;
-    color: #324158;
-    margin-bottom: 10px;
-  }
-  
-  .contact-info p {
-    margin: 5px 0;
-  }
-  
-  .contact-form form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .form-group {
-    margin-bottom: 15px;
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  .form-group input, .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    background: #e0e5ec; /* Background for inputs */
-    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2), 
-                -8px -8px 16px rgba(255, 255, 255, 0.9);
-    transition: all 0.3s ease;
-  }
-  
-  .form-group input:focus, .form-group textarea:focus {
-    outline: none;
-    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.2), 
-                inset -4px -4px 8px rgba(255, 255, 255, 0.9);
-  }
-  
-  .submit-btn {
-    background: rgb(0, 81, 255);
-    color: white;
-    border: none;
-    border-radius: 15px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2), 
-                -8px -8px 16px rgba(255, 255, 255, 0.9);
-  }
-  
-  .submit-btn:hover {
-    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.2), 
-                inset -4px -4px 8px rgba(255, 255, 255, 0.9);
-  }
-  
-  /* Responsive styles */
-  @media (max-width: 1024px) {
-    .contact-section {
       flex-direction: column;
-    }
-  
-    .contact-details, .contact-form {
-      width: 100%;
-      margin-bottom: 20px;
-    }
+      padding: 40px;
   }
-  
+
+  .contact-details, .contact-form {
+      width: 100%;
+      margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+      padding: 30px;
+  }
+
+  .contact-details, .contact-form {
+      padding: 20px;
+  }
+
+  .submit-btn {
+      padding: 12px 25px;
+      font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+      padding: 20px;
+  }
+
+  .contact-details, .contact-form {
+      padding: 15px;
+  }
+
+  .submit-btn {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+  }
+}
