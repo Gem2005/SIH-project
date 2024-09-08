@@ -18,11 +18,10 @@ const ContactForm: React.FC = () => {
         <h2><b>Contact Us</b></h2>
         <p>For inquiries or feedback, Reach Out Via Socials</p>
         <div className="contact-info">
-          <a href='https://arpan-kumar-saini.netlify.app/' target='_blank'><strong>website:</strong> arpan-kumar-saini.netlify.app</a>  <br />
-          <a href='mailto:arpansaini55@gmail.com' target='_blank'><strong>Email:</strong> arpansaini55@gmail.com</a><br />
-          <a href='https://www.linkedin.com/in/arpansaini' target='_blank'><strong>Linkedin:</strong> arpansaini</a><br />
-          <a href='https://github.com/arpan-kumar-saini' target='_blank'><strong>GitHub:</strong>arpan-kumar-saini</a><br />
-          <a href='https://www.instagram.com/arpan_kumar_saini/' target='_blank'><strong>Instagram:</strong>arpan_kumar_saini</a>
+          <a href='mailto: geminisharma2005@gmail.com' target='_blank'><strong>Email:</strong> geminisharma2005@gmail.com</a><br />
+          <a href='https://www.linkedin.com/in/geminisharma/' target='_blank'><strong>Linkedin:</strong> geminisharma</a><br />
+          <a href='https://github.com/Gem2005' target='_blank'><strong>GitHub:</strong>Gem2005</a><br />
+          <a href='https://www.instagram.com/gemini_sharma_/' target='_blank'><strong>Instagram:</strong>gemini_sharma_</a>
           
           <p><strong></strong> </p>
         </div>

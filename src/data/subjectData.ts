@@ -21,7 +21,7 @@ export const subjects: BranchSubjects = {
   IT: {
     '1st': [
       {
-        code: 'KAS102T',
+        code: 'BCHM101',
         name: 'Engineering Chemistry',
         resources: [
           { type: 'Quantum Series', url: '#' },
@@ -31,7 +31,7 @@ export const subjects: BranchSubjects = {
         ],
       },
       {
-        code: 'KAS103T',
+        code: 'BMAT101',
         name: 'Engineering Mathematics-I',
         resources: [
           { type: 'Quantum Series', url: '#' },
@@ -41,7 +41,7 @@ export const subjects: BranchSubjects = {
         ],
       },
       {
-        code: 'KAS104T',
+        code: 'BPHY101',
         name: 'Engineering Physics',
         resources: [
           { type: 'Quantum Series', url: '#' },

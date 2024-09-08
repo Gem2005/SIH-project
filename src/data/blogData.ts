@@ -19,7 +19,7 @@ export interface BlogData {
 }
 
 // Import images
-import recp1 from '../assets/images/recp1.jpg';
+import recp1 from '../assets/images/faculty.jpg';
 import cloud from '../assets/images/cloud.jpeg';
 import iot from '../assets/images/Iot.jpeg';
 import blockchain from '../assets/images/blockchain.jpeg';
@@ -35,30 +35,26 @@ const blogData: BlogData = {
   latest: [
     {
       id: "1",
-      title: "RAJKIYA ENGINEERING COLLEGE BIJNOR",
-      date: "12TH June, 2003",
-      description: "Rajkiya Engineering College Bijnor was started by Government of Uttar Pradesh, Department of Technical Education under Special Component Plan (SCP)...",
+      title: "Alumni Engagement",
+      date: "12TH June, 2024",
+      description: "Alumni engagement is the process of building and maintaining meaningful relationships between educational institutions and their former students, also known as...",
       imageSrc: recp1,
       content: `
-        Rajkiya Engineering College Bijnor (Formerly Dr. Bhim Rao Ambedkar Engineering College of Information Technology, Bijnor) was established to provide high-quality technical education in the region. It is managed by the Government of Uttar Pradesh and aims to offer various undergraduate and postgraduate programs in engineering and technology.
+        Alumni engagement is the process of building and maintaining meaningful relationships between educational institutions and their former students, also known as alumni.
 
-        The college has a sprawling campus equipped with state-of-the-art facilities. It offers programs in various engineering disciplines, including Computer Science, Electronics, Mechanical, and Civil Engineering. The institution focuses on providing a strong academic foundation coupled with practical experience.
-
-        The college's mission is to foster an environment of research, innovation, and technical excellence. With a commitment to holistic development, Rajkiya Engineering College Bijnor prepares its students to meet the challenges of the modern technological world. It also emphasizes industry collaborations and research initiatives to enhance the quality of education.
-
-        Alumni of the college have gone on to make significant contributions in their respective fields, and the institution continues to play a crucial role in advancing technical education in the region.
+Universities need engaged alumni to help contribute to the institution’s reputation, fundraising potential, networking opportunities, and support for academic and strategic goals.
       `,
-      author: "Er. Arpan Saini",
-      tags: ["Education", "Engineering", "Uttar Pradesh"],
+      author: "Gemini Sharma",
+      tags: ["Education", "Engineering", "Chennai"],
       comments: [
-        { user: "Ravi S.", comment: "An insightful post about the college's legacy!", date: "14TH June, 2023" },
-        { user: "Sneha K.", comment: "Glad to see such detailed information.", date: "15TH June, 2023" }
+        { user: "Md. Tahir", comment: "An insightful post about the college's legacy!", date: "14TH June, 2024" },
+        { user: "Aarav Sharma", comment: "Glad to see such detailed information.", date: "15TH June, 2024" }
       ]
     },
     {
       id: "2",
       title: "Cloud Computing",
-      date: "27TH Oct, 2022",
+      date: "27TH Aug, 2024",
       description: "Cloud computing is the on-demand availability of computer system resources, especially data storage (cloud storage) and computing power...",
       imageSrc: cloud,
       content: `
@@ -70,11 +66,11 @@ const blogData: BlogData = {
 
         Cloud computing has also paved the way for innovations in areas like artificial intelligence, big data analytics, and the Internet of Things (IoT). It continues to drive advancements across various industries by providing scalable and efficient solutions for computing needs.
       `,
-      author: "Babu Bhaiya",
+      author: "Aayush Yadav",
       tags: ["Technology", "Cloud Computing", "IT"],
       comments: [
-        { user: "John D.", comment: "Great overview of cloud computing benefits.", date: "30TH Oct, 2022" },
-        { user: "Emily R.", comment: "The content is very informative and up-to-date.", date: "1ST Nov, 2022" }
+        { user: "Gemini", comment: "Great overview of cloud computing benefits.", date: "30TH Aug, 2024" },
+        { user: "Aarav", comment: "The content is very informative and up-to-date.", date: "1ST Sep, 2024" }
       ]
     },
     {
@@ -92,7 +88,7 @@ const blogData: BlogData = {
 
         The growth of IoT has been driven by advancements in wireless communication technologies, such as 5G, and the increasing availability of low-cost sensors. As IoT continues to evolve, it promises to revolutionize various sectors, including healthcare, transportation, and agriculture.
       `,
-      author: "Michael Johnson",
+      author: "Santhoshi Pragathi",
       tags: ["Technology", "IoT", "Smart Devices"],
       comments: [
         { user: "Sarah M.", comment: "Very detailed explanation of IoT technology.", date: "16TH Dec, 2004" },
@@ -114,7 +110,7 @@ const blogData: BlogData = {
 
         Blockchain technology has the potential to disrupt various industries by providing a secure and transparent method for recording and verifying transactions. As blockchain continues to evolve, it is expected to play a significant role in various sectors, including finance, healthcare, and logistics.
       `,
-      author: "Alice Brown",
+      author: "Amlan Sarkar",
       tags: ["Technology", "Blockchain", "Cryptocurrency"],
       comments: [
         { user: "Liam W.", comment: "Excellent overview of blockchain technology.", date: "8TH July, 2021" },
@@ -136,7 +132,7 @@ const blogData: BlogData = {
 
         Robotics continues to advance rapidly, driven by innovations in sensor technology, machine learning, and materials science. As robots become more capable and affordable, they are expected to play an increasingly important role in various aspects of daily life and industry.
       `,
-      author: "Emma Davis",
+      author: "Md. Tahir Sheikh",
       tags: ["Technology", "Robotics", "Engineering"],
       comments: [
         { user: "Noah G.", comment: "Great article on robotics applications.", date: "24TH Oct, 2009" },

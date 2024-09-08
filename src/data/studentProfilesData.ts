@@ -1,8 +1,8 @@
-import studentImg5 from '../assets/images/Arpan5.jpg';
-import studentImg4 from '../assets/images/Arpan4.jpg';
-import studentImg2 from '../assets/images/Arpan3.jpg';
-import studentImg3 from '../assets/images/Arpan2.jpg';
-import studentImg1 from '../assets/images/arpan7.jpg';
+import studentImg5 from '../assets/images/bmen.png';
+import studentImg4 from '../assets/images/bmen2.png';
+import studentImg2 from '../assets/images/bmen3.png';
+import studentImg3 from '../assets/images/bmen.png';
+import studentImg1 from '../assets/images/bmen3.png';
 
 export interface StudentProfile {
   id: number;
@@ -30,29 +30,29 @@ export interface StudentProfile {
 export const studentProfiles: StudentProfile[] = [
   {
     id: 1,
-    name: 'Arpan Saini',
-    jobTitle: 'Web Developer and ML Engineer',
+    name: 'Gemini Sharma',
+    jobTitle: 'Web Developer',
     profileImage: studentImg3,
-    about: 'Pursuing B.Tech in Information Technology from Rajkiya Engineering College Bijnor.As a Front-End Web Developer, I live for those "aha!" moments when a design comes to life! Crafting sleek, stylish, and user-friendly interfaces . But that’s not all! I am currently diving into the magical realm of Machine Learning .',
-    email: 'work.arpansaini@gmail.com',
-    phone: '+91 9528829470',
-    company: 'NovaNectar Services Pvt. Ltd.',
+    about: 'Pursuing B.Tech in Electronics and Computer Engineering from VIT University,Chennai. As a Front-End Web Developer, I live for those "aha!" moments when a design comes to life! Crafting sleek, stylish, and user-friendly interfaces . But that’s not all! I am currently diving into the magical realm of DevOPS .',
+    email: 'geminisharma2005@gmail.com',
+    phone: '+91 xxxxxxxxxx',
+    company: 'Amazon Pvt. Ltd.',
     experience: '1 Years',
-    location: 'Moradabad',
+    location: 'Noida',
     achievements: 'Three times Student of the year during school,Secured 1st rank in DIH compition ,Secured 1st position in portrait Artwork compition',
     certifications: 'Certified Full Stack Developer, Advanced JavaScript Programming',
     projects: 'E-commerce Platform, Real-time Chat Application',
     skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js'],
     socialLinks: {
-      linkedin: 'https://www.linkedin.com/in/arpan saini/',
-      instagram: 'https://www.instagram.com/arpan_kumar_saini/',
-      github: 'https://github.com/arpan-kumar-saini',
+      linkedin: 'https://www.linkedin.com/in/geminisharma/',
+      instagram: 'https://www.instagram.com/gemini_sharma_/',
+      github: 'https://github.com/Gem2005/',
       
     }
   },
   {
     id: 2,
-    name: 'Jane Smith',
+    name: 'Aarav Sharma',
     jobTitle: 'Data Scientist',
     profileImage: studentImg2,
     about: 'Data scientist with a strong background in machine learning and data analysis.',
@@ -74,7 +74,7 @@ export const studentProfiles: StudentProfile[] = [
   },
   {
     id: 3,
-    name: 'Alice Johnson',
+    name: 'Gemini Sharma',
     jobTitle: 'UX/UI Designer',
     profileImage: studentImg1,
     about: 'Creative UX/UI designer with a passion for crafting engaging user experiences.',
@@ -96,7 +96,7 @@ export const studentProfiles: StudentProfile[] = [
   },
   {
     id: 4,
-    name: 'Bob Lee',
+    name: 'Santhoshi Pragathi',
     jobTitle: 'Software Engineer',
     profileImage: studentImg4,
     about: 'Software engineer with expertise in building scalable web applications.',
@@ -118,7 +118,7 @@ export const studentProfiles: StudentProfile[] = [
   },
   {
     id: 5,
-    name: 'Emily Davis',
+    name: 'Amlan Sarkar',
     jobTitle: 'Machine Learning Engineer',
     profileImage: studentImg5,
     about: 'Machine learning engineer specializing in artificial intelligence and predictive modeling.',
@@ -140,7 +140,7 @@ export const studentProfiles: StudentProfile[] = [
   },
   {
     id: 6,
-    name: 'Michael Brown',
+    name: 'Md. Tahir Shaikh',
     jobTitle: 'Cybersecurity Analyst',
     profileImage: studentImg2,
     about: 'Expert in cybersecurity with a focus on protecting systems from cyber threats.',

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../styles/TeamMember.css";
-import  ArpanImg  from "../assets/images/arpan7.jpg"; // Make sure the CSS file is correctly linked
+import  ArpanImg  from "../assets/images/image1.jpg"; // Make sure the CSS file is correctly linked
 import  LinkedinImg  from "../assets/images/linkdin.jpg"; // Make sure the CSS file is correctly linked
 import  InstaImg  from "../assets/images/instagram.jpg"; // Make sure the CSS file is correctly linked
 import  YoutubeImg  from "../assets/images/youtube.jpg"; // Make sure the CSS file is correctly linked
@@ -59,17 +59,19 @@ const TeamMember: React.FC<TeamMemberProps> = ({
           </a>}
         </div>
         <div className="team-card-content">
-          <h2><b>Highlights</b></h2>
+          <h2><b>Team Members</b></h2>
           <div>
           
-          <p> <b>Machine Learning Engineer</b></p>
-          <p> <b>Full Stack Web Developer</b></p>
+          <p> <b>Aayush Yadav - 23BLC1193</b></p>
+          <p> <b>Gemini Sharma-23BLC1010</b></p>
+          <p> <b>Md. Tahir Shaikh-23BAI1277</b></p>
+          <p> <b>Aarav Sharma-23BLC1300</b></p>
+          <p> <b>Amlan Sarkar-23BAI1247</b></p>
+          <p> <b>Santhoshi Pragathi-23BLC1006</b></p>
           </div>          
-          <h2><b>About</b></h2>
-          <p> Pursuing  <b>B.Tech </b> in <b>Information Technology</b> from <b><i>Rajkiya Engineering College Bijnor.</i></b>
-
-            <br />  As a <b>Front-End Web Developer</b>, I live for those <b>"aha!"</b> moments when a design comes to life! Crafting sleek, stylish, and <b>user-friendly interfaces</b> .
-           But <b><i>that’s not all!</i></b> I'm currently diving into the magical realm of <b>Machine Learning </b>.
+          <h2><b>Highlights</b></h2>
+          <p>
+            <br />Building a platform to bridge alumni and students, fostering professional networking and mentorship opportunities. Empowering students with career guidance while enabling alumni to give back to their alma mater.
           </p>
         </div>
       </div>
@@ -83,12 +85,12 @@ const TeamMembers: React.FC = () => {
       <h1 className="team-section-title">Developed By</h1>
       <div className="team-grid">
         <TeamMember
-          name="Arpan Saini"
+          name="VIT408"
           role="Web Designer and Developer"
           imgSrc={ArpanImg}
-          linkedin="https://www.linkedin.com/in/arpansaini/"
-          instagram="https://www.instagram.com/arpan_kumar_saini/"
-          youtube="https://www.youtube.com/c/ArpanSaini"
+          linkedin="https://www.linkedin.com/"
+          instagram="https://www.instagram.com/"
+          youtube="https://www.youtube.com/"
           highlights="Alpha: 7347892, Beta: gbyewwerhui, Delta: TFGJHBGGiu, Theta: ftrft7bungjin"
           about="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, laudantium ea placeat sapiente maxime, voluptatem maiores nisi ipsa libero totam nostrum ut natus quibusdam odio reiciendis possimus, repellat atque perspiciatis."
         />

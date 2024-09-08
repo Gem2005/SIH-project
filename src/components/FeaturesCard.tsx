@@ -26,7 +26,7 @@ const FeatureCard: React.FC = () => {
           { to: "/study-material", imgSrc: note2, title: "Study Material" },
           // { to: "/", imgSrc: interaction1, title: "Interact" },
           // { href: "", imgSrc: student2, title: "Students" },
-          { href: "http://recb.ac.in/", imgSrc: college3, title: "College" },
+          { href: "https://chennai.vit.ac.in/", imgSrc: college3, title: "College" },
           // { href: "", imgSrc: alpha, title: "Alpha" },
         ].map((card, index) => (
           <div

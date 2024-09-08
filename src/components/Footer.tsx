@@ -20,22 +20,10 @@ const Footer = () => {
         </div>
 
         <div>
-          <Link to={'https://www.instagram.com/arpan_kumar_saini/'}><span className='Arpan text-[#1C4483]'>Developed by- <b>@Arpan Saini</b></span></Link>
+         <p><strong>Developed By- VIT408</strong></p> 
           
         </div>
 
-        <div className="social-icons">
-          <a href="https://github.com/arpan-kumar-saini" target="_blank" className="icon" aria-label="Github">
-            <i className="fab fa-github text-[#1C4483]" ></i>
-          </a>
-          <a href='https://www.linkedin.com/in/arpansaini' target='_blank' className="icon" aria-label="Linkedin">
-          <i className="fab fa-linkedin  text-[#1C4483]"></i>       
-          </a>
-          <a href='https://www.instagram.com/arpan_kumar_saini/' target='_blank'className="icon" aria-label="Instagram">
-          <i className="fab fa-instagram  text-[#1C4483]"></i>
-          </a>
-          
-        </div>
       </div>
     </div>
   );

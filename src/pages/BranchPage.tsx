@@ -8,7 +8,11 @@ const BranchPage: React.FC = () => {
   const { batchYear } = useParams<{ batchYear: string }>();
 
   const branches = [
-    'Information Technology',
+    'Computer Science Engineering',
+    'Computer Science Engineering - AI/ML',
+    'Computer Science Engineering - CPS',
+    'Electronics and Computer Engineering',
+    'Electronics adn Communication Engineering',
     'Civil Engineering',
     'Electrical Engineering',
   ];
