@@ -24,6 +24,8 @@ const LoginPage: React.FC = () => {
           <a href="/register" className="link">Don't have an account? Register</a>
           <a href="/forgot-password" className="link">Forgot Password?</a>
         </div>
+        
+
       </div>
     </div>
     <Footer/>

@@ -1,3 +1,8 @@
+#root{
+  background-color: #cdd6eb;
+  padding-top: 5px;
+}
+
 /* General container styling */
 .branch-semester-selection {
   display: flex;
@@ -5,61 +10,81 @@
   align-items: center;
   justify-content: center;
   padding: 50px;
-  background-color: #292E49; /* Dark background for a modern look */
+  background-color: #afc6f8; /* Dark background for a modern look */
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  box-shadow: 1px 10px 30px rgba(255, 255, 255, 0.2); /* Soft shadow for depth */
   max-width: 600px;
   margin: 50px auto; /* Centered horizontally with margin from the top */
-  color: #F4F4F9; /* Light text for contrast */
+  color: #4767f4; /* Light text for contrast */
+  font-size: 22px;
+  
 }
 
 /* Heading Styles */
+
 .branch-semester-selection h2 {
+  
   font-size: 26px;
   margin-bottom: 25px;
-  color: #FFD700; /* Bright yellow for standout header */
+  color: #4767f4; /* Bright yellow for standout header */
   text-align: center;
   letter-spacing: 1.2px;
+  word-spacing: 5px;
   text-transform: uppercase; /* Uppercase for a modern look */
+  line-height: 40px;
 }
+
 
 /* Container for Select Elements */
 .select-container {
   margin: 25px 0;
-  width: 100%;
+  width: 90%;
+  font-size: 18px; /* Reduced font size */
+  text-size-adjust: 2px;
 }
+
 
 /* Label Styles */
 label {
   display: flex;
   flex-direction: column;
-  font-size: 18px;
-  color: #A9B3C1; /* Lighter grey for labels */
+  font-size: 15px; /* Reduced font size */
+  color: #000000; /* Lighter grey for labels */
   margin-bottom: 12px;
+}
+#p1{
+  font-size: 15px;
+  text-align: center;
+}
+#c1{
+  font-size: 18px;
 }
 
 /* Flat Design Select Element Styles */
 .flat-select {
   padding: 12px;
   border: 1px solid #555; /* Dark border */
-  border-radius: 8px;
+  border: 1px solid;
+  border-radius: 20px;
   background-color: #1C1F26; /* Dark background */
   font-size: 16px;
   color: #F4F4F9; /* Light text */
   outline: none;
   transition: border 0.3s ease;
+  
 }
 
 .flat-select:focus {
   border-color: #FFD700; /* Highlight border on focus */
 }
 
+
 /* Flat Button Styles */
 .flat-button {
   padding: 12px 30px;
   border-radius: 8px;
   background-color: #FFD700; /* Bright yellow background */
-  border: none;
+  border: 1px solid;
   font-size: 18px;
   color: #1C1F26; /* Dark text for contrast */
   cursor: pointer;
