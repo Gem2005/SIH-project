@@ -25,7 +25,6 @@ const Navbar: React.FC = () => {
         {/* Desktop Menu */}
         <div className="hidden md:flex flex-grow justify-center space-x-4 lg:space-x-6 text-[#d98596] font-semibold">
           <Link to="/" className="nav-item">Home</Link>
-          <Link to="#features" className="nav-item">Features</Link>
           <Link to="#arpanblogs" className="nav-item">Blogs</Link>
           <Link to="/batch" className="nav-item">Alumni</Link>
           <Link to="/study-material" className="nav-item">Notes</Link>
@@ -54,7 +53,6 @@ const Navbar: React.FC = () => {
         <div className="md:hidden absolute top-16 left-0 right-0 bg-[#E0E5EC] text-[#d98596] py-6 px-4 rounded-b-lg shadow-lg">
           <div className="flex flex-col items-center space-y-4">
             <Link to="/" className="text-lg">Home</Link>
-            <Link to="#features" className="text-lg">Features</Link>
             <Link to="#blogs" className="text-lg">Blogs</Link>
             <Link to="/batch" className="text-lg">Alumni</Link>
             <Link to="/study-material" className="text-lg">Notes</Link>
