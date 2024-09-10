@@ -22,12 +22,10 @@ const ContactForm: React.FC = () => {
           <a href='https://www.instagram.com/ayushyadav2014/' target='_blank'><strong>Instagram:</strong>ayushyadav2014</a>
           <a href='mailto: geminisharma2005@gmail.com' target='_blank'><strong>Email:</strong> geminisharma2005@gmail.com</a><br />
           <a href='https://www.instagram.com/gemini_sharma_/' target='_blank'><strong>Instagram:</strong>gemini_sharma_</a>
-          
-          <p><strong></strong> </p>
         </div>
       </div>
       <div className="contact-form">
-        <h2><b>Send Us a Message</b></h2>
+        <h2><b>Send us a Message</b></h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="name">Name</label>
