@@ -11,7 +11,7 @@ const BlogSection: React.FC = () => {
   return (
     <>
     <Navbar/>
-    <section id="blogs" className="py-16 px-4 md:px-8 lg:px-16 xl:px-24 bg-[#cdd6eb]" >
+    <section id="blogs" style={{ paddingTop: '7.5rem' }} className=" py-16 px-4 md:px-8 lg:px-16 xl:px-24 bg-[#cdd6eb]" >
       {/* Section Header */}
       <div className="flex justify-center mb-12">
         <a className="text-[#324158] text-3xl lg:text-5xl font-bold">Blogs</a>
