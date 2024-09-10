@@ -16,12 +16,12 @@ const ContactForm: React.FC = () => {
     <section id="ContactUs" className="contact-section">
       <div className="contact-details">
         <h2><b>Contact Us</b></h2>
-        <p>For inquiries or feedback, Reach Out Via Socials</p>
+        <p>For inquiries or feedback,reach out to our tech support:</p><br />
         <div className="contact-info">
-          <a href='mailto: ayushyadav14012002@gmail.com' target='_blank'><strong>Email:</strong> ayushyadav14012002@gmail.com</a><br />
-          <a href='https://www.instagram.com/ayushyadav2014/' target='_blank'><strong>Instagram:</strong>ayushyadav2014</a>
-          <a href='mailto: geminisharma2005@gmail.com' target='_blank'><strong>Email:</strong> geminisharma2005@gmail.com</a><br />
-          <a href='https://www.instagram.com/gemini_sharma_/' target='_blank'><strong>Instagram:</strong>gemini_sharma_</a>
+          <a href='mailto: ayushyadav14012002@gmail.com' target='_blank'><strong>Email: </strong> ayushyadav14012002@gmail.com</a><br />
+          <a href='https://www.instagram.com/ayushyadav2014/' target='_blank'><strong>Instagram: </strong>ayushyadav2014</a><br/>
+          <a href='mailto: geminisharma2005@gmail.com' target='_blank'><strong>Email: </strong> geminisharma2005@gmail.com</a><br />
+          <a href='https://www.instagram.com/gemini_sharma_/' target='_blank'><strong>Instagram: </strong>gemini_sharma_</a><br />
         </div>
       </div>
       <div className="contact-form">
