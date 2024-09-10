@@ -14,6 +14,7 @@ import FAQ from './pages/FAQ';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import ForgetPassword from './pages/ForgetPassword';
+import BlogSection from '@components/BlogSection';
 
 const App: React.FC = () => {
   return (
@@ -42,7 +43,8 @@ const App: React.FC = () => {
         <Route path="/study-material/:branch/:year" element={<SubjectList />} />
 
         {/* for  blog feature */}
-        <Route path="/blog/:id" element={<BlogPage />} />
+        <Route path="/blogs/:id" element={<BlogPage/>} />
+        <Route path="/blogs" element={<BlogSection/>}/>
 
 
         {/* for error page  */}

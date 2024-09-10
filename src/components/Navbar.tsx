@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import ContactForm from './ContactForm';  // Import your ContactForm component
+import ContactForm from './ContactForm';
+import BlogPage from './BlogSection';
+import BlogRoutes from './BlogRoutes';
 import "../styles/Navbar.css";
 
 const Navbar: React.FC = () => {

@@ -3,10 +3,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import blogData, { BlogCardProps } from '../data/blogData'; // Import blog data
+import Navbar from './Navbar';
 
 const BlogSection: React.FC = () => {
   return (
-    <section id="arpanblogs" className="py-16 px-4 md:px-8 lg:px-16 xl:px-24 bg-[#e0e5ec]">
+    <>
+    <Navbar/>
+    <section id="blogs" className="py-16 px-4 md:px-8 lg:px-16 xl:px-24 bg-[#e0e5ec]">
       {/* Section Header */}
       <div className="flex justify-center mb-12">
         <a className="text-[#324158] text-3xl lg:text-5xl font-bold">Blogs</a>
@@ -30,7 +33,7 @@ const BlogSection: React.FC = () => {
                 <h2 className="text-sm text-[#333333] font-semibold">{blog.title}</h2>
                 <p className="text-[#4a4a4a] text-xs lg:text-sm lg:leading-6 mt-2">{blog.description}</p>
                 <div className="flex justify-end mt-2">
-                  <Link to={`/blog/${blog.id}`} className="text-white bg-gradient-to-r from-[#008AFC] via-blue-500 to-[#1C4483] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-[#008AFC] shadow-lg hover:shadow-[#0056b3] font-medium rounded-lg text-xs px-3 py-1.5 text-center">Read More..</Link>
+                  <Link to={`/blogs/${blog.id}`} className="text-white bg-gradient-to-r from-[#008AFC] via-blue-500 to-[#1C4483] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-[#008AFC] shadow-lg hover:shadow-[#0056b3] font-medium rounded-lg text-xs px-3 py-1.5 text-center">Read More..</Link>
                 </div>
               </div>
             </div>
@@ -38,6 +41,7 @@ const BlogSection: React.FC = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 
