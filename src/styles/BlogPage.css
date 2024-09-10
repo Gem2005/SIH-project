@@ -10,6 +10,9 @@ body {
   background-color: #1C1F26; /* Dark background */
 }
 
+#blogs{
+  background-color: aqua;
+}
 .shadow-flat {
   background-color: #292E49; /* Darker container */
   border-radius: 12px;
@@ -20,7 +23,7 @@ body {
 
 .shadow-flat:hover {
   transform: translateY(-5px); /* Lift effect on hover */
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+  /* box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3); Deeper shadow on hover */
 }
 
 /* Text links with hover effect */

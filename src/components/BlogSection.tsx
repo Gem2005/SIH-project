@@ -4,12 +4,14 @@ import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import blogData, { BlogCardProps } from '../data/blogData'; // Import blog data
 import Navbar from './Navbar';
+import Footer from './Footer'
+// import { colors } from '@mui/material';
 
 const BlogSection: React.FC = () => {
   return (
     <>
     <Navbar/>
-    <section id="blogs" className="py-16 px-4 md:px-8 lg:px-16 xl:px-24 bg-[#e0e5ec]">
+    <section id="blogs" className="py-16 px-4 md:px-8 lg:px-16 xl:px-24 bg-[#cdd6eb]" >
       {/* Section Header */}
       <div className="flex justify-center mb-12">
         <a className="text-[#324158] text-3xl lg:text-5xl font-bold">Blogs</a>
@@ -22,7 +24,7 @@ const BlogSection: React.FC = () => {
           {blogData.latest.map((blog: BlogCardProps) => (
             <div
               key={blog.id}
-              className="bg-[#e0e5ec] shadow-neumorphism rounded-lg p-4 transition-shadow duration-300 ease-in-out hover:shadow-[inset_2px_2px_5px_rgba(0,0,0,0.2),inset_-2px_-2px_5px_rgba(255,255,255,0.5)]"
+              className="bg-[#e0e5ec] rounded-lg p-4 transition-shadow duration-300 ease-in-out hover:shadow-[inset_2px_2px_5px_rgba(0,0,0,0.2),inset_-2px_-2px_5px_rgba(255,255,255,0.5)]"
             >
               <img src={blog.imageSrc} alt={blog.title} className="w-full h-32 object-cover rounded-lg" />
               <div className="py-2 px-4 flex justify-between bg-[#e0e5ec] border-b border-[#c1c8d1] rounded-t-lg mt-2">
@@ -41,6 +43,7 @@ const BlogSection: React.FC = () => {
         </div>
       </div>
     </section>
+    <Footer/>
     </>
   );
 };
