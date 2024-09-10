@@ -27,22 +27,15 @@ const App: React.FC = () => {
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/forgot-password" element={<ForgetPassword />} />
         <Route path="/faq" element={<FAQ />} />
-        {/* for alumini list features */}
-        
-       
         <Route path="/batch" element={<BatchPage />} />
         <Route path="/branch/:batchYear" element={<BranchPage />} />
         <Route path="/students/:batchYear/:branchName" element={<StudentsPage />} />
         <Route path="/student/:studentId" element={<StudentProfilePage />} />
-
-      
-
-        {/* for notes feature */}
         <Route path="/study-material" element={<BranchSemesterSelection />} />
         <Route path="/study-material/:branch/:year" element={<SubjectList />} />
 
         {/* for  blog feature */}
-        <Route path="/blog/:id" element={<BlogPage />} />
+        <Route path="/blogs/" element={<BlogPage/>} />
 
 
         {/* for error page  */}
