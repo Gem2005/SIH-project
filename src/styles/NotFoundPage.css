@@ -1,99 +1,112 @@
-/* NotFoundPage.css */
-
+/* Container for the 404 page */
 .not-found-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: #e0e5ec;
-    padding: 1rem;
-  }
-  
-  .not-found-inner {
-    text-align: center;
-    position: relative;
-    padding: 2rem;
-    border-radius: 20px;
-    background: #e0e5ec;
-    box-shadow:  7px 7px 14px #b0b0b0, -7px -7px 14px #ffffff;
-  }
-  
-  .not-found-image {
-    position: absolute;
-    top: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 150px;
-    opacity: 0.75;
-  }
-  
-  .not-found-content {
-    position: relative;
-    z-index: 1;
-    margin-top: 100px;
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #1C1F26; /* Dark background for the page */
+  padding: 1rem;
+}
+
+/* Inner content styling */
+.not-found-inner {
+  text-align: center;
+  position: relative;
+  padding: 3rem;
+  border-radius: 20px;
+  background: #292E49; /* Dark card-like background */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Softer shadow for depth */
+}
+
+/* Image above the content */
+.not-found-image {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  opacity: 0.8;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3)); /* Soft shadow for the image */
+}
+
+/* Content below the image */
+.not-found-content {
+  position: relative;
+  z-index: 1;
+  margin-top: 80px;
+}
+
+/* Title for the 404 message */
+.not-found-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #FFD700; /* Bright yellow for contrast */
+  margin-bottom: 1rem;
+}
+
+/* Description for the 404 page */
+.not-found-description {
+  max-width: 600px;
+  margin: 1rem auto;
+  font-size: 1.2rem;
+  color: #B0BEC5; /* Light gray for text */
+  line-height: 1.6;
+}
+
+/* Button for the 404 page */
+.not-found-button {
+  display: inline-block;
+  padding: 0.9rem 2rem;
+  font-size: 1.1rem;
+  color: #ffffff;
+  background: #008afc;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Soft shadow */
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for the button */
+.not-found-button:hover {
+  background: #005f99;
+  transform: translateY(-3px); /* Lift the button slightly on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive Styles */
+
+/* For tablets */
+@media (max-width: 768px) {
   .not-found-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #1c4483;
+      font-size: 2.5rem;
   }
-  
+
   .not-found-description {
-    max-width: 600px;
-    margin: 1rem auto;
-    font-size: 1.1rem;
-    color: #4a4a4a;
-  }
-  
-  .not-found-button {
-    display: inline-block;
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-    color: #ffffff;
-    background: #008afc;
-    border-radius: 25px;
-    text-decoration: none;
-    box-shadow: 3px 3px 6px #b0b0b0, -3px -3px 6px #ffffff;
-    transition: background 0.3s ease;
-  }
-  
-  .not-found-button:hover {
-    background: #005f99;
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .not-found-title {
-      font-size: 2rem;
-    }
-  
-    .not-found-description {
       font-size: 1rem;
-    }
-  
-    .not-found-button {
+  }
+
+  .not-found-button {
+      padding: 0.7rem 1.5rem;
+      font-size: 1rem;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+  .not-found-inner {
+      padding: 1.5rem;
+  }
+
+  .not-found-title {
+      font-size: 1.8rem;
+  }
+
+  .not-found-description {
+      font-size: 0.9rem;
+  }
+
+  .not-found-button {
       padding: 0.6rem 1.2rem;
       font-size: 0.9rem;
-    }
   }
-  
-  @media (max-width: 480px) {
-    .not-found-inner {
-      padding: 1rem;
-    }
-  
-    .not-found-title {
-      font-size: 1.5rem;
-    }
-  
-    .not-found-description {
-      font-size: 0.9rem;
-    }
-  
-    .not-found-button {
-      padding: 0.5rem 1rem;
-      font-size: 0.8rem;
-    }
-  }
-  
+}

@@ -1,107 +1,114 @@
-/* Global styles for the login page */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #E0E5EC;
-  }
-  
-  .login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 85vh;
-  }
-  
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #1C1F26; /* Dark background for a modern look */
+  color: #F4F4F9; /* Light text for better contrast */
+}
+
+/* Container for login form */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+}
+
+/* Styling for the login form */
+.login-form {
+  background: #292E49; /* Darker background for the form */
+  border-radius: 15px;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-form:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5); /* Deep shadow on hover */
+}
+
+/* Heading styling */
+h1 {
+  margin-bottom: 1.5rem;
+  color: #FFD700; /* Bright yellow accent for the header */
+  text-align: center;
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  color: #F4F4F9; /* Light text for labels */
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  background: #394359; /* Dark input background */
+  color: #F4F4F9; /* Light text for input */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  transition: box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5); /* Glow on focus */
+}
+
+/* Submit button styling */
+.submit-button {
+  width: 100%;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #FFD700; /* Bright yellow for button */
+  color: #1C1F26; /* Dark text for button */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+.submit-button:hover {
+  transform: translateY(-3px); /* Lift on hover */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* Deeper shadow */
+}
+
+/* Links styling */
+.links {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.links .link {
+  color: #FFD700; /* Bright yellow for links */
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin: 0 0.5rem;
+}
+
+.links .link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
   .login-form {
-    background: #E0E5EC;
-    border-radius: 20px;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), 
-    -4px -4px 8px rgba(255, 255, 255, 0.9);
-    padding: 2rem;
-    width: 100%;
-    max-width: 400px;
-    transition: box-shadow 0.3s ease;
+      padding: 2rem;
   }
-  
-  .login-form:hover {
-    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.2), 
-              inset -4px -4px 8px rgba(255, 255, 255, 0.9);
-  }
-  
-  h1 {
-    margin: 0 0 1rem;
-    color: #333;
-  }
-  
-  .form-group {
-    margin-bottom: 1rem;
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: #555;
-  }
-  
-  .form-group input {
-    width: 100%;
-    padding: 0.8rem;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), 
-              -4px -4px 8px rgba(255, 255, 255, 0.9);
-    transition: box-shadow 0.3s ease;
-  }
-  
-  .form-group input:focus {
-    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.2), 
-              inset -4px -4px 8px rgba(255, 255, 255, 0.9);
-    outline: none;
-  }
-  
-  .submit-button {
-    width: 100%;
-    padding: 0.8rem;
-    border: none;
-    border-radius: 10px;
-    background-color: #007bff;
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), 
-    -4px -4px 8px rgba(255, 255, 255, 0.9);
-    transition: box-shadow 0.3s ease;
-  }
-  
-  
-  
-  .links {
-    margin-top: 1rem;
-    text-align: center;
-  }
-  
-  .links .link {
-    color: #007bff;
-    text-decoration: none;
-    font-size: 0.9rem;
-    margin: 0 0.5rem;
-  }
-  
-  .links .link:hover {
-    text-decoration: underline;
-  }
-  
-  /* Responsive design */
-  @media (max-width: 768px) {
-    .login-form {
-      padding: 1rem;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .login-form {
+}
+
+@media (max-width: 480px) {
+  .login-form {
       width: 100%;
       border-radius: 0;
-    }
+      padding: 1.5rem;
   }
-  
+}

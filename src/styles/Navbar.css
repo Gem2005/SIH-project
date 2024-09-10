@@ -8,6 +8,8 @@ nav {
     border-radius: 0 0 10px 10px;
 
     z-index: 50;
+    background-image: url("../assets/images/interaction1.png");
+    background-size: cover;
   }
   
   .container {

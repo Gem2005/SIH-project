@@ -1,45 +1,45 @@
-/* BranchPage.css */
-
 /* General styles for the page */
 .branch-page {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #E0E5EC;
-  padding-top: 20px; /* Adjust top padding to provide margin */
+  background-color: #1C1F26; /* Dark background for modern look */
+  padding-top: 30px; /* Increased top padding */
 }
 
 /* Content section styling */
 .branch-content {
   flex: 1;
-  padding: 1.5rem; /* General padding for smaller screens */
+  padding: 2rem;
+  color: #F4F4F9; /* Light text for contrast */
 }
 
 /* Header styling */
 .branch-header {
   text-align: center;
-  margin-bottom: 2rem;
-  margin-top: 1rem; /* Margin from top for the header */
+  margin-bottom: 2.5rem;
+  margin-top: 2rem;
 }
 
 .branch-header h2 {
-  font-size: 2rem;
+  font-size: 2.8rem;
   font-weight: bold;
-  color: #2E3A59;
+  color: #FFD700; /* Bright yellow for a standout header */
+  text-transform: uppercase; /* Modern uppercase text */
 }
 
 .branch-header p {
-  font-size: 1.2rem;
-  color: #576D94;
+  font-size: 1.3rem;
+  color: #A9B3C1; /* Light grey for subtext */
 }
 
 /* Grid layout for branch cards */
 .branch-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Center items horizontally */
-  gap: 1.5rem; /* Space between grid items */
-  padding: 1rem;
+  justify-content: center;
+  gap: 2rem; /* Space between grid items */
+  padding: 2rem;
 }
 
 /* Styling for individual branch cards */
@@ -47,21 +47,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem;
-  background-color: #E0E5EC;
-  border-radius: 12px;
-  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1), -6px -6px 12px rgba(255, 255, 255, 0.7);
+  padding: 2rem;
+  background-color: #292E49; /* Dark card background */
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Soft shadow */
   text-align: center;
   text-decoration: none;
-  color: #1E2A38;
-  font-weight: 600;
-  transition: box-shadow 0.3s ease;
-  width: 100%; /* Ensure full width on smaller screens */
-  max-width: 300px; /* Limit max width for larger screens */
+  color: #FFF; /* White text for contrast */
+  font-weight: 700;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 350px; /* Increased card width */
 }
 
 .branch-card:hover {
-  box-shadow: inset 6px 6px 12px rgba(0, 0, 0, 0.1), inset -6px -6px 12px rgba(255, 255, 255, 0.7);
+  transform: translateY(-5px); /* Lift card on hover */
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5); /* Deeper shadow on hover */
 }
 
 /* Responsive Design */
@@ -69,19 +71,19 @@
 /* For tablets */
 @media (min-width: 640px) {
   .branch-content {
-    padding: 2rem;
+    padding: 2.5rem;
   }
 
   .branch-header h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   .branch-header p {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   .branch-card {
-    padding: 2rem;
+    padding: 2.5rem;
   }
 }
 
@@ -92,7 +94,7 @@
   }
 
   .branch-header h2 {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   .branch-header p {
@@ -100,11 +102,11 @@
   }
 
   .branch-card {
-    padding: 2.5rem;
+    padding: 3rem;
   }
 
   .branch-grid {
-    gap: 2rem; /* Increase gap for better spacing */
+    gap: 2.5rem; /* Increased gap for better spacing */
   }
 }
 
@@ -115,7 +117,7 @@
   }
 
   .branch-header h2 {
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
 
   .branch-header p {
@@ -123,8 +125,8 @@
   }
 
   .branch-card {
-    padding: 3rem;
-    max-width: 400px; /* Allow wider cards on large screens */
+    padding: 3.5rem;
+    max-width: 400px; /* Wider cards for large screens */
   }
 
   .branch-grid {
