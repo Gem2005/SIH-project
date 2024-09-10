@@ -58,8 +58,9 @@ body {
   color: #ffffff;
   font-size: 19px;
 }
-#name,#email{
+#name,#email,#message{
   background-color: #ffffff;
+  color: #000000;
 }
 
 .form-group {
@@ -78,7 +79,7 @@ body {
   border: none;
   border-radius: 10px;
   background-color: #ffffff; /* Dark background for inputs */
-  color: #FFF; /* White text for inputs */
+  color: #000000; /* White text for inputs */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Soft shadow */
   transition: all 0.3s ease;
 }
