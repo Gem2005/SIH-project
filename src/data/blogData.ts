@@ -24,11 +24,7 @@ import cloud from '../assets/images/cloud.jpeg';
 import iot from '../assets/images/Iot.jpeg';
 import blockchain from '../assets/images/blockchain.jpeg';
 import robotics from '../assets/images/Robotics.jpeg';
-import ai from '../assets/images/ai.jpeg';
-import quantum from '../assets/images/quantum.jpeg';
-import vr from '../assets/images/vr.jpeg';
-import cybersecurity from '../assets/images/cybersecurity.jpeg';
-import bigdata from '../assets/images/bigdata.jpeg';
+
 
 // Example blog data
 const blogData: BlogData = {

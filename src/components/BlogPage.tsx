@@ -1,15 +1,19 @@
-// components/BlogPage.tsx
-
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import blogData from '../data/blogData';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import Navbar from './Navbar';
+import Footer from './Footer';
 
 const BlogPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
 
+  // Debugging: Log the ID
+  console.log(id);
+
   const blog = blogData.latest.find(blog => blog.id === id);
+
+  // Debugging: Log the selected blog
+  console.log(blog);
 
   if (!blog) {
     return <p className="text-center text-red-500">Blog not found!</p>;

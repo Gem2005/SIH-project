@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import ContactForm from './ContactForm';  // Import your ContactForm component
+import { Link, useLocation } from 'react-router-dom';
+import ContactForm from './ContactForm';
+import BlogPage from './BlogPage';
 import "../styles/Navbar.css";
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isContactOpen, setIsContactOpen] = useState(false); // For ContactForm modal
+  const [isContactOpen, setIsContactOpen] = useState(false);
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -14,6 +16,8 @@ const Navbar: React.FC = () => {
   const toggleContactForm = () => {
     setIsContactOpen(!isContactOpen);
   };
+
+  const isBlogModalOpen = location.pathname.includes('/blogs');
 
   return (
     <>
@@ -30,12 +34,11 @@ const Navbar: React.FC = () => {
           {/* Desktop Menu */}
           <div className="hidden md:flex flex-grow justify-center space-x-4 lg:space-x-6 text-[#d98596] font-semibold">
             <Link to="/" className="nav-item">Home</Link>
-            <Link to="/blogs" className="nav-item">Blogs</Link>
-            <Link to="/batch" className="nav-item">Alumni</Link>
+            <Link to="/blog" className="nav-item">Blogs</Link> {/* Updated route to blog */}
             <Link to="/study-material" className="nav-item">Notes</Link>
             <Link to="/faq" className="nav-item">FAQs</Link>
             <span onClick={toggleContactForm} className="nav-item cursor-pointer">Contact Us</span>
-            <Link to="/loginpage" className="nav-item">Login</Link>
+            
           </div>
 
           {/* Mobile Menu Button */}
@@ -59,11 +62,25 @@ const Navbar: React.FC = () => {
               <Link to="/study-material" className="text-lg">Notes</Link>
               <Link to="/faq" className="text-lg">FAQs</Link>
               <span onClick={toggleContactForm} className="text-lg cursor-pointer">Contact Us</span>
-              <Link to="/loginpage" className="text-lg">Login</Link>
             </div>
           </div>
         )}
       </nav>
+
+      {/* BlogPage Modal */}
+      {isBlogModalOpen && (
+        <div className="fixed inset-0 bg-gray-500 bg-opacity-75 flex justify-center items-center z-50">
+          <div className="relative bg-white p-6 rounded-lg shadow-lg w-full h-full overflow-y-auto max-h-screen mx-4 lg:mx-auto lg:max-w-6xl">
+            {/* Close button */}
+            <Link to="/">
+              <button className="absolute top-4 right-4 text-3xl font-bold text-gray-700 hover:text-gray-900">
+                &times;
+              </button>
+            </Link>
+            <BlogPage />
+          </div>
+        </div>
+      )}
 
       {/* ContactForm Pop-up */}
       {isContactOpen && (
