@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import ContactForm from './ContactForm';  // Import your ContactForm component
+import ContactForm from './ContactForm';
+import BlogPage from './BlogSection';
+import BlogRoutes from './BlogRoutes';
 import "../styles/Navbar.css";
 
 const Navbar: React.FC = () => {
@@ -49,45 +51,6 @@ const Navbar: React.FC = () => {
           </button>
         </div>
 
-        {/* Desktop Menu */}
-        <div className="hidden md:flex flex-grow justify-center space-x-4 lg:space-x-6 text-[#d98596] font-semibold">
-          <Link to="/" className="nav-item">Home</Link>
-          <Link to="/blogs" className="nav-item">Blogs</Link>
-          <Link to="/batch" className="nav-item">Alumni</Link>
-          <Link to="/study-material" className="nav-item">Notes</Link>
-          <Link to="/faq" className="nav-item">FAQs</Link>
-          {/* <Link to="#review" className="nav-item">Review</Link> */}
-          {/* <Link to="#team" className="nav-item">Our Team</Link> */}
-          {/* <Link to="/faq" className="nav-item">FAQs</Link> */}
-          <Link to="/ContactUs" className="nav-item">Contact Us</Link>
-          <Link to="/loginpage" className="nav-item">Login</Link>
-        </div>
-
-        {/* Mobile Menu Button */}
-        <button
-          className="md:hidden flex flex-col items-center justify-center p-2 space-y-1"
-          onClick={toggleMenu}
-        >
-          <div className="w-6 h-0.5 bg-[#d98596]"></div>
-          <div className="w-6 h-0.5 bg-[#d98596]"></div>
-          <div className="w-6 h-0.5 bg-[#d98596]"></div>
-        </button>
-      </div>
-
-      {/* Mobile Menu */}
-      {isMenuOpen && (
-        <div className="md:hidden absolute top-16 left-0 right-0 bg-[#E0E5EC] text-[#d98596] py-6 px-4 rounded-b-lg shadow-lg">
-          <div className="flex flex-col items-center space-y-4">
-            <Link to="/" className="text-lg">Home</Link>
-            <Link to="/blogs" className="text-lg">Blogs</Link>
-            <Link to="/batch" className="text-lg">Alumni</Link>
-            <Link to="/study-material" className="text-lg">Notes</Link>
-            <Link to="/faq" className="text-lg">FAQs</Link>
-            {/* <Link to="#review" className="text-lg">Review</Link> */}
-            {/* <Link to="#team" className="text-lg">Our Team</Link> */}
-            {/* <Link to="/faq" className="text-lg">FAQs</Link> */}
-            <Link to="/contact" className="text-lg">Contact Us</Link>
-            <Link to="/loginpage" className="text-lg">Login</Link>
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden absolute top-16 left-0 right-0 bg-[#E0E5EC] text-[#d98596] py-6 px-4 rounded-b-lg shadow-lg">
