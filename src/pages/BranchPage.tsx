@@ -12,7 +12,7 @@ const BranchPage: React.FC = () => {
     'Computer Science Engineering - AI/ML',
     'Computer Science Engineering - CPS',
     'Electronics and Computer Engineering',
-    'Electronics adn Communication Engineering',
+    'Electronics and Communication Engineering',
     'Civil Engineering',
     'Electrical Engineering',
   ];

@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background: linear-gradient(135deg, #2492eb, #145693); /* Gradient background */
   background: linear-gradient(135deg, #292E49, #536976); /* Gradient background */
   border-radius: 30px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Softer shadow */
@@ -152,3 +153,4 @@
       width: 100%;
   }
 }
+
