@@ -6,9 +6,9 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(135deg, #2492eb, #145693); /* Gradient background */
+  background: linear-gradient(135deg, #32a3ff, #002c56); /* Gradient background */
   border-radius: 30px;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Softer shadow */
+  /* box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); Softer shadow */
 }
 
 /* Inner div styles */
@@ -19,6 +19,14 @@
   flex-wrap: wrap;
   padding: 40px 20px;
   width: 100%;
+}
+
+#features{
+  background-color: #cdd6eb;
+  box-shadow: none;
+}
+#arpanblogs{
+  background-color: #cdd6eb;
 }
 
 /* Content styles */
@@ -65,15 +73,15 @@
   border: none;
   background: #1D2671; /* Darker background for buttons */
   color: white;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2), 
-              -4px -4px 8px rgba(255, 255, 255, 0.1); /* Softer shadow */
+  /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2), 
+              -4px -4px 8px rgba(255, 255, 255, 0.1); Softer shadow */
   transition: all 0.3s ease;
 }
 
 .hero-button:hover {
   background: linear-gradient(135deg, #C33764, #1D2671); /* Gradient on hover */
-  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.2), 
-              inset -4px -4px 8px rgba(255, 255, 255, 0.2);
+  /* box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.2), 
+              inset -4px -4px 8px rgba(255, 255, 255, 0.2); */
 }
 
 .hero-button.primary {
@@ -102,7 +110,7 @@
   height: auto;
   flex-shrink: 0;
   border-radius: 20px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* More defined shadow */
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); More defined shadow */
   transition: all 0.3s ease;
 }
 
