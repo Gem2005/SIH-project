@@ -27,8 +27,8 @@ const BranchSemesterSelection: React.FC = () => {
             Branch:
             <select value={branch} onChange={(e) => setBranch(e.target.value)} className="neomorphic-select">
               <option value="">Select Branch</option>
-              <option value="CSE">Computer Science</option>
-              <option value="ECE">Electronics and Communication Engineering</option>
+              <option value="IT">Information Technology</option>
+              <option value="Civil">Civil Engineering</option>
               <option value="Electrical">Electrical Engineering</option>
             </select>
           </label>
