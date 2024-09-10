@@ -24,32 +24,32 @@ const BranchSemesterSelection: React.FC = () => {
         <h2>Select Your Branch and Semester</h2>
         <div className="select-container">
           <label>
-            Branch:
+            Branch :
             <select value={branch} onChange={(e) => setBranch(e.target.value)} className="neomorphic-select">
-              <option value="">Select Branch</option>
-              <option value="CSE">Computer Science</option>
-              <option value="ECE">Electronics and Communication Engineering</option>
-              <option value="Electrical">Electrical Engineering</option>
+              <option value="" align="center" >--Select Branch--</option>
+              <option value="CSE" align="center">Computer Science</option>
+              <option value="ECE" align="center">Electronics and Communication Engineering</option>
+              <option value="Electrical" align="center">Electrical Engineering</option>
             </select>
           </label>
         </div>
         <div className="select-container">
           <label>
-            Semester:
+            Semester :
             <select value={semester} onChange={(e) => setSemester(e.target.value)} className="neomorphic-select">
-              <option value="">Select Semester</option>
-              <option value="1st">1st Semester</option>
-              <option value="2nd">2nd Semester</option>
-              <option value="3rd">3rd Semester</option>
-              <option value="4th">4th Semester</option>
-              <option value="5th">5th Semester</option>
-              <option value="6th">6th Semester</option>
-              <option value="7th">7th Semester</option>
-              <option value="8th">8th Semester</option>
+              <option value="" align="center" id="p1">--Select Semester--</option>
+              <option value="1st" align="center">1st Semester</option>
+              <option value="2nd" align="center">2nd Semester</option>
+              <option value="3rd" align="center">3rd Semester</option>
+              <option value="4th" align="center">4th Semester</option>
+              <option value="5th" align="center">5th Semester</option>
+              <option value="6th" align="center">6th Semester</option>
+              <option value="7th" align="center">7th Semester</option>
+              <option value="8th" align="center">8th Semester</option>
             </select>
           </label>
         </div>
-        <button onClick={handleSubmit} className="neomorphic-button">Submit</button>
+        <button onClick={handleSubmit} className="neomorphic-button"><b>Submit</b></button>
       </div>
       <Footer />
     </>

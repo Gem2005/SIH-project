@@ -3,14 +3,14 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #1C1F26; /* Dark background for contrast */
+  background-color: #cdd6eb; /* Dark background for contrast */
   padding-top: 30px; /* Adjusted top padding for better spacing */
 }
 
 /* Content section styling */
 .batch-content {
   flex: 1;
-  padding: 2rem; /* Increased padding for more space */
+  padding: 1rem; /* Increased padding for more space */
   color: #F4F4F9; /* Light text for readability */
 }
 
@@ -24,8 +24,9 @@
 .batch-header h2 {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #FFD700; /* Bright yellow for attention-grabbing header */
+  color: #638df5; /* Bright yellow for attention-grabbing header */
   text-transform: uppercase; /* Uppercase for a modern look */
+  word-spacing: 12px;
 }
 
 /* Batch grid layout */
@@ -33,7 +34,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Increased card size */
   gap: 2rem; /* More gap between cards */
-  padding: 2rem;
+  padding: 1rem;
 }
 
 /* Styling for individual batch cards */
@@ -41,18 +42,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
-  background: linear-gradient(135deg, #292E49, #536976); /* Gradient background for cards */
+  padding: 1rem;
+  background: linear-gradient(155deg, #6783f6, #c799f9); /* Gradient background for cards */
   border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Softer, deeper shadow */
+  box-shadow: 1 10px 25px #000000; /* Softer, deeper shadow */
   text-align: center;
   text-decoration: none;
   color: #FFF;
   font-weight: 700;
   font-size: 1.2rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  max-width: 350px;
+  max-width: 300px;
   width: 100%;
+  height: 50%;
 }
 
 .batch-card:hover {

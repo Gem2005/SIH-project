@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { students } from '../data/studentsData';
+import { colors } from '@mui/material';
 
 const StudentsPage: React.FC = () => {
   const { batchYear, branchName } = useParams<{ batchYear: string; branchName: string }>();
@@ -11,7 +12,7 @@ const StudentsPage: React.FC = () => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       <div className="flex-grow py-16 mt-10 px-4 md:px-8 lg:px-16 xl:px-24 bg-[#E0E5EC]">
-        <h1 className="text-2xl font-semibold mb-8">
+        <h1 className="text-2xl font-semibold mb-8 text-blue-500" >
           Students for {branchName} - Batch {batchYear}
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">

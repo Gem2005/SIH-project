@@ -20,6 +20,9 @@
     box-shadow: inset 6px 6px 12px #a1a1a1, inset -6px -6px 12px #ffffff;
 }
 
+h2{
+    color: #638df5;
+}
 /* Neumorphic Button */
 .neumorphism-button {
     background: #e0e5ec;
