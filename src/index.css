@@ -22,7 +22,7 @@ html {
 .nav-item {
   padding: 4px 8px; /* Adjusted padding for smaller boxes */
   border-radius: 8px;
-  color: #1C4483;
+  color: #d98596;
   font-weight: 400; /* Slightly lighter font weight */
   font-size: 0.75rem; /* Small text size (12px) */
   transition: all 0.3s ease;
@@ -37,7 +37,7 @@ html {
   background-color: rgba(255, 255, 255, 0.3);
   box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.2), 
               inset -4px -4px 8px rgba(255, 255, 255, 0.9);
-  color: #008AFC;
+  color: #d98596;
   text-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -104,8 +104,8 @@ html {
               -8px -8px 16px rgba(255, 255, 255, 0.9);
 }
 
-.md\\:hidden .text-[#1C4483] {
-  color: #1C4483;
+.md\\:hidden .text-[#d98596] {
+  color: #d98596;
 }
 
 
@@ -206,8 +206,8 @@ html {
               -8px -8px 16px rgba(255, 255, 255, 0.7);
 }
 
-.md\\:hidden .text-[#1C4483] {
-  color: #1C4483; /* Keep original color */
+.md\\:hidden .text-[#d98596] {
+  color: #d98596; /* Keep original color */
 }
 
 /* Neumorphism shadow styles */
