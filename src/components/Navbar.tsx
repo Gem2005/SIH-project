@@ -25,14 +25,14 @@ const Navbar: React.FC = () => {
         {/* Desktop Menu */}
         <div className="hidden md:flex flex-grow justify-center space-x-4 lg:space-x-6 text-[#d98596] font-semibold">
           <Link to="/" className="nav-item">Home</Link>
-          <Link to="#arpanblogs" className="nav-item">Blogs</Link>
+          <Link to="/blogs" className="nav-item">Blogs</Link>
           <Link to="/batch" className="nav-item">Alumni</Link>
           <Link to="/study-material" className="nav-item">Notes</Link>
           <Link to="/faq" className="nav-item">FAQs</Link>
           {/* <Link to="#review" className="nav-item">Review</Link> */}
           {/* <Link to="#team" className="nav-item">Our Team</Link> */}
           {/* <Link to="/faq" className="nav-item">FAQs</Link> */}
-          <Link to="#ContactUs" className="nav-item">Contact Us</Link>
+          <Link to="/ContactUs" className="nav-item">Contact Us</Link>
           <Link to="/loginpage" className="nav-item">Login</Link>
           {/* <Link to="/arpan_admin" className="nav-item">Admin</Link> */}
         </div>
@@ -60,7 +60,7 @@ const Navbar: React.FC = () => {
             {/* <Link to="#review" className="text-lg">Review</Link> */}
             {/* <Link to="#team" className="text-lg">Our Team</Link> */}
             {/* <Link to="/faq" className="text-lg">FAQs</Link> */}
-            <Link to="#contact" className="text-lg">Contact Us</Link>
+            <Link to="/contact" className="text-lg">Contact Us</Link>
             <Link to="/loginpage" className="text-lg">Login</Link>
             {/* <Link to="/arpan_admin" className="text-lg">Admin</Link> */}
           </div>
