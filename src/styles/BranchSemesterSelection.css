@@ -52,6 +52,13 @@ label {
   color: #000000; /* Lighter grey for labels */
   margin-bottom: 12px;
 }
+#p1{
+  font-size: 15px;
+  text-align: center;
+}
+#c1{
+  font-size: 18px;
+}
 
 /* Flat Design Select Element Styles */
 .flat-select {

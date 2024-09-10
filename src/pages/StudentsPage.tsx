@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { students } from '../data/studentsData';
-import { colors } from '@mui/material';
+// import { colors } from '@mui/material';
 
 const StudentsPage: React.FC = () => {
   const { batchYear, branchName } = useParams<{ batchYear: string; branchName: string }>();

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { studentProfiles } from '../data/studentProfilesData';
@@ -11,16 +11,16 @@ import '../styles/StudentProfilePage.css';
 
 const StudentProfilePage: React.FC = () => {
   const { studentId } = useParams<{ studentId: string }>();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const studentProfile = studentProfiles.find(profile => profile.id.toString() === studentId);
 
   if (!studentProfile) {
     return <div className="min-h-screen flex items-center justify-center text-lg">Student not found</div>;
   }
 
-  const handleMessageClick = () => {
-    navigate(`/chat/${studentProfile.id}`); // Navigate to the chat room with studentId
-  };
+  // const handleMessageClick = () => {
+  //   navigate(`/chat/${studentProfile.id}`); // Navigate to the chat room with studentId
+  // };
 
   return (
     <div className="min-h-screen flex flex-col bg-[#E0E5EC]">

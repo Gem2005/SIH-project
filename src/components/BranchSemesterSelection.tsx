@@ -24,28 +24,28 @@ const BranchSemesterSelection: React.FC = () => {
         <h2>Select Your Branch and Semester</h2>
         <div className="select-container">
           <label>
-            Branch :
+            <p id="c1">Branch :</p>
             <select value={branch} onChange={(e) => setBranch(e.target.value)} className="neomorphic-select">
-              <option value="" align="center" >--Select Branch--</option>
-              <option value="CSE" align="center">Computer Science</option>
-              <option value="ECE" align="center">Electronics and Communication Engineering</option>
-              <option value="Electrical" align="center">Electrical Engineering</option>
+              <option value=""  id="p1">-- Select Branch --</option>
+              <option value="CSE" id="p1">Computer Science</option>
+              <option value="ECE" id="p1">Electronics and Communication Engineering</option>
+              <option value="Electrical" id="p1">Electrical Engineering</option>
             </select>
           </label>
         </div>
         <div className="select-container">
           <label>
-            Semester :
+            <p id="c1">Semester :</p>
             <select value={semester} onChange={(e) => setSemester(e.target.value)} className="neomorphic-select">
-              <option value="" align="center" id="p1">--Select Semester--</option>
-              <option value="1st" align="center">1st Semester</option>
-              <option value="2nd" align="center">2nd Semester</option>
-              <option value="3rd" align="center">3rd Semester</option>
-              <option value="4th" align="center">4th Semester</option>
-              <option value="5th" align="center">5th Semester</option>
-              <option value="6th" align="center">6th Semester</option>
-              <option value="7th" align="center">7th Semester</option>
-              <option value="8th" align="center">8th Semester</option>
+              <option value=""  id="p1">-- Select Semester --</option>
+              <option value="1st" id="p1">1st Semester</option>
+              <option value="2nd" id="p1">2nd Semester</option>
+              <option value="3rd" id="p1">3rd Semester</option>
+              <option value="4th" id="p1">4th Semester</option>
+              <option value="5th" id="p1">5th Semester</option>
+              <option value="6th" id="p1">6th Semester</option>
+              <option value="7th" id="p1">7th Semester</option>
+              <option value="8th" id="p1">8th Semester</option>
             </select>
           </label>
         </div>
