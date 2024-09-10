@@ -7,7 +7,6 @@
   align-items: center;
   flex-direction: column;
   background: linear-gradient(135deg, #2492eb, #145693); /* Gradient background */
-  background: linear-gradient(135deg, #292E49, #536976); /* Gradient background */
   border-radius: 30px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Softer shadow */
 }
@@ -38,7 +37,6 @@
   font-weight: 800;
   margin: 0 0 20px;
   padding: 20px;
-  background: linear-gradient(135deg, #1D2671, #C33764); /* Gradient background for title */
   border-radius: 20px;
   transition: all 0.3s ease;
 }
@@ -153,4 +151,3 @@
       width: 100%;
   }
 }
-
