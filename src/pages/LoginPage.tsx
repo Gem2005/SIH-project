@@ -77,6 +77,8 @@ const LoginPage: React.FC = () => {
             </a>
           </div>
         </div>
+        
+
       </div>
       <Footer />
     </>

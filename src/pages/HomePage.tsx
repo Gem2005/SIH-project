@@ -1,9 +1,6 @@
 import React from 'react';
 import FeaturesCard from '../components/FeaturesCard';
-import BlogCard from '../components/BlogCard';
-import Testimonial from '../components/Testimonial';
 import TeamMember from '../components/TeamMember';
-import ContactForm from '../components/ContactForm';
 import BlogSection from '../components/BlogSection';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
@@ -17,7 +14,6 @@ const HomePage: React.FC = () => {
      <FeaturesCard />
      <BlogSection/>         
      <TeamMember />      
-     <ContactForm />
      <Footer/>
          
     </div>

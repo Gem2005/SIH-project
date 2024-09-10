@@ -2,7 +2,7 @@ body {
   font-family: 'Helvetica Neue', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #1c1c1e; /* Dark background for contrast */
+  background-color: #ffffff; /* Dark background for contrast */
   color: #f4f4f4; /* Light text for readability */
 }
 
@@ -17,7 +17,7 @@ body {
 .alumni-content {
   flex: 1; /* Ensure the content takes up remaining space above the footer */
   padding: 50px;
-  background: #2c2c2e; /* Slightly lighter dark grey */
+  background: #ffffff; /* Slightly lighter dark grey */
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Softer shadow for depth */
   color: #ffffff; /* White text inside the content area */
@@ -27,6 +27,7 @@ body {
   text-align: center;
   margin-bottom: 40px;
 }
+
 
 .session-header h2 {
   font-size: 2.5rem;
