@@ -23,10 +23,7 @@ const TeamMember: React.FC<TeamMemberProps> = ({
   imgSrc,
   linkedin,
   instagram,
- 
   youtube,
-  highlights,
-  about
 }) => {
   const [showFull, setShowFull] = useState(false);
 
@@ -64,8 +61,8 @@ const TeamMember: React.FC<TeamMemberProps> = ({
           
           <p> <b>Ayush Yadav - 23BLC1193</b></p>
           <p> <b>Gemini Sharma-23BLC1010</b></p>
-          <p> <b>Md. Tahir Shaikh-23BAI1277</b></p>
           <p> <b>Aarav Sharma-23BLC1300</b></p>
+          <p> <b>Md. Tahir Shaikh-23BAI1277</b></p>
           <p> <b>Amlan Sarkar-23BAI1247</b></p>
           <p> <b>Santhoshi Pragathi-23BLC1006</b></p>
           </div>          
