@@ -4,7 +4,7 @@
   max-width: 900px;
   margin: 0 auto;
   padding: 30px;
-  background: #1C1F26; /* Dark background for a modern look */
+  background: #afc6f8; /* Dark background for a modern look */
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Softer shadow */
   color: #F4F4F9; /* Light text for better contrast */
@@ -15,7 +15,7 @@
   text-align: center;
   font-size: 2.5em;
   margin-bottom: 25px;
-  color: #FFD700; /* Bright color for the title */
+  color: #4767f4; /* Bright color for the title */
   text-transform: uppercase; /* Capitalize for modern style */
   letter-spacing: 1.5px; /* Spacing for a clean look */
 }
@@ -30,7 +30,7 @@
 .faq-item {
   margin-bottom: 20px;
   padding: 20px;
-  background: #292E49; /* Dark card background */
+  background:linear-gradient(165deg, #6783f6, #e1c9fa); /* Dark card background */
   border-radius: 10px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* Slight shadow for depth */
   cursor: pointer;
@@ -48,7 +48,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #FFD700; /* Accent color for questions */
+  color: #ffffff; /* Accent color for questions */
 }
 
 /* Toggle Button Styles */
@@ -56,7 +56,7 @@
   background: none;
   border: none;
   font-size: 1.5em;
-  color: #FFD700;
+  color: #ffffff;
   cursor: pointer;
   transition: transform 0.3s ease;
 }

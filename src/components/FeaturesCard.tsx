@@ -4,7 +4,11 @@ import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 // Import images
 import alumini1 from '../assets/images/alumini1.jpg';
 import note2 from '../assets/images/note2.jpg';
+// import interaction1 from '../assets/images/interaction1.png';
+// import student2 from '../assets/images/student2.png';
 import college3 from '../assets/images/college3.png';
+// import alpha from '../assets/images/alpha.jpg';
+
 
 const FeatureCard: React.FC = () => {
   return (
@@ -28,7 +32,7 @@ const FeatureCard: React.FC = () => {
         ].map((card, index) => (
           <div
             key={index}
-            className="flex flex-col items-center justify-center p-4 bg-[#E0E5EC] rounded-[20px] shadow-[6px_6px_12px_rgba(0,0,0,0.1),_-6px_-6px_12px_rgba(255,255,255,0.7)] transition-shadow duration-300 ease-in-out hover:shadow-[inset_6px_6px_12px_rgba(0,0,0,0.1),_inset_-6px_-6px_12px_rgba(255,255,255,0.7)]"
+            className="flex flex-col items-center justify-center p-4 bg-[#E0E5EC] rounded-[20px] transition-shadow duration-300 ease-in-out hover:shadow-[inset_6px_6px_12px_rgba(0,0,0,0.1),_inset_-6px_-6px_12px_rgba(255,255,255,0.7)]"
           >
             {card.to ? (
               <Link to={card.to} className="flex justify-center items-center mb-4">

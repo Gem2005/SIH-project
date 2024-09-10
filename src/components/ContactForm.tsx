@@ -28,7 +28,7 @@ const ContactForm: React.FC = () => {
         <h2><b>Send us a Message</b></h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
-            <label htmlFor="name">Name</label>
+            <label htmlFor="name"><p id="p2">Name</p></label>
             <input
               type="text"
               id="name"
@@ -38,7 +38,7 @@ const ContactForm: React.FC = () => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email"><p id="p2">Email</p></label>
             <input
               type="email"
               id="email"
@@ -48,7 +48,7 @@ const ContactForm: React.FC = () => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="message">Message</label>
+            <label htmlFor="message"><p id="p2">Message</p></label>
             <textarea
               id="message"
               value={message}
@@ -57,7 +57,7 @@ const ContactForm: React.FC = () => {
               required
             />
           </div>
-          <button type="submit" className="submit-btn">Submit</button>
+          <button type="submit" className="submit-btn" id="b1">Submit</button>
         </form>
       </div>
     </section>

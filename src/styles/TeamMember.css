@@ -30,8 +30,8 @@ body {
 .team-card {
   background: #e0e5ec;
   border-radius: 15px;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2),
-              -4px -4px 8px rgba(255, 255, 255, 0.9);
+  /* box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2),
+              -4px -4px 8px rgba(255, 255, 255, 0.9); */
   overflow: hidden;
   transition: all 0.3s ease;
   position: relative;
