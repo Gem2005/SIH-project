@@ -4,10 +4,11 @@ import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 // Import images
 import alumini1 from '../assets/images/alumini1.jpg';
 import note2 from '../assets/images/note2.jpg';
-import interaction1 from '../assets/images/interaction1.png';
-import student2 from '../assets/images/student2.png';
+// import interaction1 from '../assets/images/interaction1.png';
+// import student2 from '../assets/images/student2.png';
 import college3 from '../assets/images/college3.png';
-import alpha from '../assets/images/alpha.jpg';
+// import alpha from '../assets/images/alpha.jpg';
+
 
 const FeatureCard: React.FC = () => {
   return (
