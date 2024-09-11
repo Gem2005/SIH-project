@@ -2,37 +2,36 @@ import React, { useState } from 'react';
 import '../styles/LoginPage.css';
 import Footer from '@components/Footer';
 import Navbar from '@components/Navbar';
-import axios from 'axios'; // for making API requests
+import { useNavigate } from 'react-router-dom';
 
 const LoginPage: React.FC = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
+  const navigate = useNavigate(); // Hook for navigation
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    setLoading(true);
 
-    try {
-      setLoading(true);
-      const config = {
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      };
-      const { data } = await axios.post(
-        '/api/auth/login',
-        { email, password },
-        config
-      );
+    // Retrieve users from local storage
+    const storedUsers = JSON.parse(localStorage.getItem('users') || '[]');
 
-      console.log('Logged in:', data);
-      localStorage.setItem('userInfo', JSON.stringify(data));
-      setLoading(false);
-    } catch (error: any) {
-      setError(error.response.data.message || 'An error occurred');
-      setLoading(false);
+    // Find the user with the matching email and password
+    const user = storedUsers.find((user: { email: string; password: string }) => user.email === email && user.password === password);
+
+    if (user) {
+      // Successful login
+      localStorage.setItem('userInfo', JSON.stringify(user));
+      setError('');
+      navigate('/'); // Redirect to the homepage
+    } else {
+      // Login failed
+      setError('Invalid email or password.');
     }
+
+    setLoading(false);
   };
 
   return (
@@ -77,8 +76,6 @@ const LoginPage: React.FC = () => {
             </a>
           </div>
         </div>
-        
-
       </div>
       <Footer />
     </>

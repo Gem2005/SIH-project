@@ -1,13 +1,21 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom'; // Import useNavigate from react-router-dom
 import ContactForm from './ContactForm';
-// import BlogPage from './BlogSection';
-// import BlogRoutes from './BlogRoutes';
 import "../styles/Navbar.css";
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isContactOpen, setIsContactOpen] = useState(false); // For ContactForm modal
+  const [isContactOpen, setIsContactOpen] = useState(false);
+  const [userName, setUserName] = useState<string | null>(null);
+  const navigate = useNavigate(); // Hook for navigation
+
+  useEffect(() => {
+    const userInfo = localStorage.getItem('userInfo');
+    if (userInfo) {
+      const user = JSON.parse(userInfo);
+      setUserName(user.name); // Assuming 'name' is a field in user info
+    }
+  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -15,6 +23,20 @@ const Navbar: React.FC = () => {
 
   const toggleContactForm = () => {
     setIsContactOpen(!isContactOpen);
+  };
+
+  const handleLogout = () => {
+    localStorage.removeItem('userInfo');
+    setUserName(null);
+    navigate('/loginpage'); // Redirect to login page after logout
+  };
+
+  const handleNavigation = (path: string) => {
+    if (userName) {
+      navigate(path);
+    } else {
+      navigate('/loginpage');
+    }
   };
 
   return (
@@ -32,12 +54,23 @@ const Navbar: React.FC = () => {
           {/* Desktop Menu */}
           <div className="hidden md:flex flex-grow justify-center space-x-4 lg:space-x-6 text-[#d98596] font-semibold">
             <Link to="/" className="nav-item">Home</Link>
-            <Link to="/blogs" className="nav-item">Blogs</Link>
-            <Link to="/batch" className="nav-item">Alumni</Link>
-            <Link to="/study-material" className="nav-item">Notes</Link>
+            <button onClick={() => handleNavigation('/blogs')} className="nav-item">Blogs</button>
+            <button onClick={() => handleNavigation('/batch')} className="nav-item">Alumni</button>
+            <button onClick={() => handleNavigation('/study-material')} className="nav-item">Notes</button>
             <Link to="/faq" className="nav-item">FAQs</Link>
             <span onClick={toggleContactForm} className="nav-item cursor-pointer">Contact Us</span>
-            <Link to="/loginpage" className="nav-item">Login</Link>
+            {userName ? (
+              <div className="relative group">
+                <button className="nav-item flex items-center space-x-2">
+                  <span>{userName}</span>
+                </button>
+                <div className="dropdown-menu">
+                  <button onClick={handleLogout} className="dropdown-item">Logout</button>
+                </div>
+              </div>
+            ) : (
+              <Link to="/loginpage" className="nav-item">Login</Link>
+            )}
           </div>
 
           {/* Mobile Menu Button */}
@@ -56,12 +89,23 @@ const Navbar: React.FC = () => {
           <div className="md:hidden absolute top-16 left-0 right-0 bg-[#E0E5EC] text-[#d98596] py-6 px-4 rounded-b-lg shadow-lg">
             <div className="flex flex-col items-center space-y-4">
               <Link to="/" className="text-lg">Home</Link>
-              <Link to="/blogs" className="text-lg">Blogs</Link>
-              <Link to="/batch" className="text-lg">Alumni</Link>
-              <Link to="/study-material" className="text-lg">Notes</Link>
+              <button onClick={() => handleNavigation('/blogs')} className="text-lg">Blogs</button>
+              <button onClick={() => handleNavigation('/batch')} className="text-lg">Alumni</button>
+              <button onClick={() => handleNavigation('/study-material')} className="text-lg">Notes</button>
               <Link to="/faq" className="text-lg">FAQs</Link>
               <span onClick={toggleContactForm} className="text-lg cursor-pointer">Contact Us</span>
-              <Link to="/loginpage" className="text-lg">Login</Link>
+              {userName ? (
+                <div className="relative group">
+                  <button className="text-lg flex items-center space-x-2">
+                    <span>{userName}</span>
+                  </button>
+                  <div className="dropdown-menu">
+                    <button onClick={handleLogout} className="dropdown-item">Logout</button>
+                  </div>
+                </div>
+              ) : (
+                <Link to="/loginpage" className="text-lg">Login</Link>
+              )}
             </div>
           </div>
         )}

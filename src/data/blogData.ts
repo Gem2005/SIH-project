@@ -25,9 +25,31 @@ import iot from '../assets/images/Iot.jpeg';
 import blockchain from '../assets/images/blockchain.jpeg';
 import robotics from '../assets/images/Robotics.jpeg';
 
+export interface BlogPost {
+  id: string;
+  title: string;
+  date: string;
+  description: string;
+  imageSrc: string;
+  content: string;
+  author: string;
+  tags: string[];
+  comments: Comment[];
+}
+
+export interface Comment {
+  user: string;
+  comment: string;
+  date: string;
+}
+
+export interface BlogData {
+  latest: BlogPost[];
+}
+
 // Example blog data
 const blogData: BlogData = {
-  latest: [
+  latest:  [
     {
       id: "1",
       title: "Alumni Engagement",

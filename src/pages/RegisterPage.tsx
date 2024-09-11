@@ -1,61 +1,92 @@
 import React, { useState } from 'react';
-import '../styles/RegisterPage.css';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate for redirection
+import '../styles/RegisterPage.css'; // Importing the CSS for styling
 import Footer from '@components/Footer';
 import Navbar from '@components/Navbar';
-import axios from 'axios';
+
+interface User {
+  name: string;
+  email: string;
+  password: string;
+}
 
 const RegisterPage: React.FC = () => {
+  // State for form fields
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
-  const [error, setError] = useState('');
-  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null); // Error handling
+  const [successMessage, setSuccessMessage] = useState<string | null>(null); // Success message
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const navigate = useNavigate(); // Initialize useNavigate for redirection
+
+  // Function to handle form submission
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Simple validation
+    if (!name || !email || !password || !confirmPassword) {
+      setError('All fields are required.');
+      return;
+    }
     if (password !== confirmPassword) {
-      setError('Passwords do not match');
+      setError('Passwords do not match.');
       return;
     }
 
-    try {
-      setLoading(true);
-      const config = {
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      };
-      const { data } = await axios.post(
-        '/api/auth/register',
-        { name, email, password },
-        config
-      );
+    // Get existing users from localStorage
+    const existingUsers = JSON.parse(localStorage.getItem('users') || '[]');
 
-      console.log('Registered user:', data);
-      localStorage.setItem('userInfo', JSON.stringify(data));
-      setLoading(false);
-    } catch (error: any) {
-      setError(error.response?.data?.message || 'An error occurred');
-      setLoading(false);
+    // Check if user already exists
+    const userExists = existingUsers.some((user: User) => user.email === email);
+    if (userExists) {
+      setError('A user with this email already exists.');
+      return;
     }
+
+    // Create a new user object
+    const newUser: User = { name, email, password };
+
+    // Save user to localStorage
+    const updatedUsers = [...existingUsers, newUser];
+    localStorage.setItem('users', JSON.stringify(updatedUsers));
+
+    // Show success message
+    setSuccessMessage('Registration successful! Redirecting to login page...');
+
+    // Clear the form
+    setName('');
+    setEmail('');
+    setPassword('');
+    setConfirmPassword('');
+    setError(null);
+
+    // Redirect to login page after 2 seconds
+    setTimeout(() => {
+      navigate('/loginpage');
+    }, 2000);
   };
 
   return (
     <>
       <Navbar />
-      <div className="register-container">
+      <div className="register-container mt-16">
         <div className="register-form">
-          {error && <span className="error-message">{error}</span>}
+          <h2>Register</h2>
+          
+          {error && <p className="error-message">{error}</p>}
+          {successMessage && <p className="success-message">{successMessage}</p>}
+
           <form onSubmit={handleSubmit}>
             <div className="form-group">
               <label htmlFor="name">Name</label>
               <input
                 type="text"
                 id="name"
-                placeholder="Enter your name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
+                placeholder="Enter your name"
                 required
               />
             </div>
@@ -64,9 +95,9 @@ const RegisterPage: React.FC = () => {
               <input
                 type="email"
                 id="email"
-                placeholder="Enter your email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                placeholder="Enter your email"
                 required
               />
             </div>
@@ -75,31 +106,27 @@ const RegisterPage: React.FC = () => {
               <input
                 type="password"
                 id="password"
-                placeholder="Enter your password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
+                placeholder="Enter your password"
                 required
               />
             </div>
             <div className="form-group">
-              <label htmlFor="confirmPassword">Confirm Password</label>
+              <label htmlFor="confirm-password">Confirm Password</label>
               <input
                 type="password"
-                id="confirmPassword"
-                placeholder="Confirm your password"
+                id="confirm-password"
                 value={confirmPassword}
                 onChange={(e) => setConfirmPassword(e.target.value)}
+                placeholder="Confirm your password"
                 required
               />
             </div>
-            <button type="submit" className="submit-button" disabled={loading}>
-              {loading ? 'Loading...' : 'Register'}
-            </button>
+            <button type="submit" className="submit-button">Register</button>
           </form>
           <div className="links">
-            <a href="/loginpage" className="link">
-              Already have an account? Login
-            </a>
+            <a href="/loginpage" className="link">Already have an account? Login</a>
           </div>
         </div>
       </div>

@@ -1,16 +1,26 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import { Link, useNavigate } from 'react-router-dom'; // Import useNavigate from react-router-dom
 
 // Import images
 import alumini1 from '../assets/images/alumini1.jpg';
 import note2 from '../assets/images/note2.jpg';
-// import interaction1 from '../assets/images/interaction1.png';
-// import student2 from '../assets/images/student2.png';
 import college3 from '../assets/images/college3.png';
-// import alpha from '../assets/images/alpha.jpg';
-
 
 const FeatureCard: React.FC = () => {
+  const navigate = useNavigate(); // Hook for navigation
+
+  // Check if the user is logged in
+  const isLoggedIn = !!localStorage.getItem('userInfo');
+
+  // Redirect to login page if not logged in
+  const handleRedirect = (url: string) => {
+    if (isLoggedIn) {
+      navigate(url);
+    } else {
+      navigate('/loginpage');
+    }
+  };
+
   return (
     <section id="features" className="py-16 px-4 md:px-8 lg:px-16 xl:px-24 bg-[#E0E5EC]">
       {/* Section Header */}
@@ -23,25 +33,25 @@ const FeatureCard: React.FC = () => {
       {/* Card Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {[
-          { to: "/batch", imgSrc: alumini1, title: "Alumni" }, // Update href to route
+          { to: "/batch", imgSrc: alumini1, title: "Alumni" },
           { to: "/study-material", imgSrc: note2, title: "Study Material" },
-          // { to: "/", imgSrc: interaction1, title: "Interact" },
-          // { href: "", imgSrc: student2, title: "Students" },
           { href: "https://chennai.vit.ac.in/", imgSrc: college3, title: "College" },
-          // { href: "", imgSrc: alpha, title: "Alpha" },
         ].map((card, index) => (
           <div
             key={index}
             className="flex flex-col items-center justify-center p-4 bg-[#E0E5EC] rounded-[20px] transition-shadow duration-300 ease-in-out hover:shadow-[inset_6px_6px_12px_rgba(0,0,0,0.1),_inset_-6px_-6px_12px_rgba(255,255,255,0.7)]"
           >
             {card.to ? (
-              <Link to={card.to} className="flex justify-center items-center mb-4">
+              <button
+                className="flex justify-center items-center mb-4"
+                onClick={() => handleRedirect(card.to)}
+              >
                 <img
                   src={card.imgSrc}
                   alt={card.title}
                   className="rounded-full w-28 h-28 md:w-24 md:h-24 lg:w-32 lg:h-32 object-cover shadow-inner"
                 />
-              </Link>
+              </button>
             ) : (
               <a href={card.href} className="flex justify-center items-center mb-4">
                 <img

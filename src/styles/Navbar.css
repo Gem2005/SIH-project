@@ -11,7 +11,42 @@
 .nav-item:hover {
   color: #008AFC;
 }
+.dropdown-menu {
+  display: none;
+}
 
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.dropdown-menu .dropdown-item {
+  padding: 0.5rem 1rem;
+  width: 100%;
+  text-align: left;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* Show dropdown when hovering over parent */
+.group:hover .dropdown-menu {
+  display: block;
+}
 button:focus {
   outline: none;
 }

@@ -18,6 +18,7 @@ import BlogSection from '@components/BlogSection';
 
 const App: React.FC = () => {
   return (
+    <>
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -52,6 +53,7 @@ const App: React.FC = () => {
       
       </Routes>
     </Router>
+    </>
   );
 };
 
