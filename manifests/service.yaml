@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: edubridge
+  namespace: namespace-workflow-1735567692797
+  labels:
+    kubernetes.azure.com/generator: devhub
+spec:
+  type: LoadBalancer
+  selector:
+    app: edubridge
+  ports:
+    - protocol: TCP
+      port: 3000
+      targetPort: 3000
