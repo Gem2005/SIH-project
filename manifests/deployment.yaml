@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: edubridge
+  labels:
+    app: edubridge
+    kubernetes.azure.com/generator: devhub
+  namespace: namespace-workflow-1735567692797
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: edubridge
+  template:
+    metadata:
+      labels:
+        app: edubridge
+    spec:
+      containers:
+        - name: edubridge
+          image: akscourseregistry.azurecr.io/image-workflow-1735567692797:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 3000
